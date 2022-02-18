@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ManMade</title>
+    <link rel="stylesheet" type="text/css" href="css/normalise.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header class="wrapper-color">
+      <div class="container-big">
+        <section class="cart-block">
+          <div class="cart-block__container">
+            <div class="cart-block__up">
+              <h4 class="cart-block__caption">Мой заказ</h4>
+              <div class="cart-block__close"></div>
+            </div>
+            <div class="cart-block__scroll"> 
+              <div class="cart-block__wrapper">
+                <div class="cart-good"><img class="cart-good__img" src="img/cart-img.png">
+                  <div class="cart-good__wrap">
+                    <div class="cart-good__block-text"><span class="cart-good__caption">Epic H7-E1</span><span class="cart-good__price">153 000 руб.</span><span class="cart-good__del">Удалить</span></div>
+                    <div class="configurate-contre">
+                      <div class="configurate-contre__block">
+                        <div class="configurate-contre__minus">&mdash;</div>
+                      </div>
+                      <div class="configurate-contre__value">
+                        <input class="configurate-contre__number" type="text" value="0"><span class="configurate-contre__text">шт.</span>
+                      </div>
+                      <div class="configurate-contre__block"> 
+                        <div class="configurate-contre__plus">+</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block-btn">
+                  <button class="block-btn__btn"> <span>Оформить заказ</span></button>
+                </div>
+              </div><span class="cart-block__text">Купить в 1 клик</span>
+            </div>
+          </div>
+        </section>
+        <section class="mob-menu">
+          <div class="mob-menu__container">
+            <div class="mob-menu__up">
+              <div class="logo"><img class="logo__img" src="img/logo-black.svg"></div>
+              <div class="mob-menu__close"></div>
+            </div>
+            <ul class="mob-menu__list">
+              <li class="mob-menu__item"><a class="mob-menu__link" href="#">Игровые</a></li>
+              <li class="mob-menu__item"><a class="mob-menu__link" href="#">Рабочие станции</a></li>
+              <li class="mob-menu__item"><a class="mob-menu__link" href="#">Собрать ПК</a></li>
+              <li class="mob-menu__item"><a class="mob-menu__link" href="#">Акции</a></li>
+              <li class="mob-menu__item"><a class="mob-menu__link" href="#">Как купить</a></li>
+              <li class="mob-menu__item"><a class="mob-menu__link" href="#">Доставка</a></li>
+              <li class="mob-menu__item"><a class="mob-menu__link" href="#">Контакт</a></li>
+            </ul><a class="tel" href="tel:">8-800-707-52-62</a><span class="header-down__link show_popup" rel="modal1">Получить консультацию</span>
+          </div>
+        </section>
+        <section class="header">
+          <div class="search-line">
+            <div class="container">
+              <form class="search-line__form">
+                <div class="search-line__wrapper">
+                  <label class="search-line__wrap">
+                    <input class="search-line__field" type="text" placeholder="Поиск">
+                  </label>
+                  <button class="search-line__icon"><img src="img/search-icon2.svg"></button>
+                  <div class="search-line__close"></div>
+                </div>
+              </form>
+              <div class="search-line__middle">
+                <div class="search-results"><img class="search-results__img" src="img/corp.png">
+                  <div class="search-results__block-text"><span class="search-results__caption">Компьтер Epic E1 c GeForce RTX 2080 Ti</span><a class="search-results__link" href="#">Игровые компьютеры</a></div>
+                </div>
+                <div class="search-results"><img class="search-results__img" src="img/corp.png">
+                  <div class="search-results__block-text"><span class="search-results__caption">Nvidia запускает серию видеокарт GeForce 20ХХ</span><a class="search-results__link" href="#">Новости</a></div>
+                </div>
+              </div>
+              <div class="search-line__down"><a class="search-line__all-results" href="#">Все результаты</a><span class="search-line__value">28</span></div>
+            </div>
+          </div>
+          <div class="header-up">
+            <div class="container">
+              <div class="header-up__wrapper"><a class="logo" href="#"><img class="logo__img" src="img/logo.svg">
+                  <div class="logo__wrap"><img src="img/logo-text.svg"></div></a>
+                <div class="burger">
+                  <div class="burger__wrapper">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                  </div>
+                </div>
+                <div class="header-up__nav">
+                  <ul class="header-up__list">
+                    <li class="header-up__item"><a class="header-up__link" href="#">Игровые</a></li>
+                    <li class="header-up__item"><a class="header-up__link" href="#">Рабочие станции</a></li>
+                    <li class="header-up__item"><a class="header-up__link" href="#">Собрать ПК</a></li>
+                  </ul>
+                </div>
+                <div class="header-up__block">
+                  <div class="header-up__search-icon"><img src="img/search.svg"></div>
+                  <div class="cart">
+                    <div class="cart__wrap">
+                      <div class="cart__circle"></div><img class="cart__img" src="img/shopping-cart.svg">
+                    </div>
+                    <div class="cart__block-text"><span class="cart__caption">Мой заказ</span><span class="cart__price">150 380 руб.</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="wrapper-bg" style="background-image: url(img/);">
+          <div class="header-down">
+            <div class="container">
+              <div class="header-down__wrapper">
+                <ul class="nav">
+                  <li class="nav__item"><a class="nav__link" href="#">Акции</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Как купить</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                </ul>
+                <div class="header-down__right-block"><a class="tel" href="tel:">8-800-707-52-62</a><span class="header-down__link show_popup" rel="modal1">Получить консультацию</span></div>
+              </div>
+            </div>
+          </div>
+          <section class="first-screen">
+            <div class="first-slider swiper-container">
+              <div class="first-slider__wrapper swiper-wrapper">
+                <div class="first-slider__slide swiper-slide">
+                  <div class="first-slider__wrap">
+                    <picture>
+                      <source srcset="img/banner-mob.jpg" media="(max-width: 480px)"><img class="first-slider__img" src="img/banner.jpg" alt="">
+                    </picture>
+                    <!--img.first-slider__img(src="img/banner.jpg")-->
+                    <!--.container
+                    .first-slider__block-text
+                      h2.first-slider__title Мощь. Впечатляет
+                      p.first-slider__text Сверхпроводник возбудим. Течение среды когерентно концентрирует изобарический квазар. Гетерогенная структура
+                      .first-slider__row
+                        span.first-slider__price 221 990 руб.
+                        img.first-slider__img(src="img/intel-inside.png")
+                      .block-btn
+                        button.block-btn__btn 
+                          span Подробнее
+                    
+                    -->
+                  </div>
+                </div>
+                <div class="first-slider__slide swiper-slide">
+                  <div class="first-slider__wrap">
+                    <div class="first-video">
+                      <video class="first-video__video" autoplay loop preload="auto" muted="muted">
+                        <source src="video/comp.mp4" type="video/mp4">
+                      </video><img class="first-video__img-mob" src="img/banner-mob2.jpg" alt="">
+                    </div>
+                    <!--.container
+                    .first-slider__block-text
+                      h2.first-slider__title Мощь. Впечатляет
+                      p.first-slider__text Сверхпроводник возбудим. Течение среды когерентно концентрирует изобарический квазар. Гетерогенная структура
+                      .first-slider__row
+                        span.first-slider__price 221 990 руб.
+                        img.first-slider__img(src="img/intel-inside.png")
+                      .block-btn
+                        button.block-btn__btn 
+                          span Подробнее
+                    
+                    -->
+                  </div>
+                </div>
+              </div>
+              <div class="first-slider__arrow-row">
+                <div class="first-slider__arrow first-slider__arrow--prev"><img src="img/arrow.svg"></div>
+                <div class="first-slider__arrow first-slider__arrow--next"><img src="img/arrow.svg"></div>
+              </div>
+              <div class="first-slider__down">
+                <div class="container">
+                  <div class="first-slider__down-wrapper">
+                    <div class="first-slider__pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="sect-category line-border">
+        <div class="container">
+          <div class="sect-category__wrapper"><a class="post-category" href="#">
+              <div class="post-category__wrap" style="background-image: url(img/post-category1.png);">
+                <div class="post-category__up">
+                  <h4 class="post-category__caption">Для игры</h4><span class="post-category__text">от 130 000 руб.</span>
+                </div>
+                <div class="post-category__down">
+                  <div class="post-category__btn">
+                    <div class="post-category__btn-text"> <span>Подробнее</span></div>
+                    <div class="post-category__wrap-arrow"><img class="post-category__arrow" src="img/arrow-btn.svg"></div>
+                  </div>
+                </div>
+              </div></a><a class="post-category" href="#">
+              <div class="post-category__wrap" style="background-image: url(img/post-category2.png);">
+                <div class="post-category__up">
+                  <h4 class="post-category__caption">Для работы</h4><span class="post-category__text">от 250 000 руб.</span>
+                </div>
+                <div class="post-category__down">
+                  <div class="post-category__btn">
+                    <div class="post-category__btn-text"> <span>Подробнее</span></div>
+                    <div class="post-category__wrap-arrow"><img class="post-category__arrow" src="img/arrow-btn.svg"></div>
+                  </div>
+                </div>
+              </div></a><a class="post-category" href="#">
+              <div class="post-category__wrap" style="background-image: url(img/post-category3.png);">
+                <div class="post-category__up">
+                  <h4 class="post-category__caption">Конструктор</h4><span class="post-category__text">Собери свой компьютер</span>
+                </div>
+                <div class="post-category__down">
+                  <div class="post-category__btn">
+                    <div class="post-category__btn-text"> <span>Подробнее</span></div>
+                    <div class="post-category__wrap-arrow"><img class="post-category__arrow" src="img/arrow-btn.svg"></div>
+                  </div>
+                </div>
+              </div></a></div>
+        </div>
+      </section>
+      <section class="info-sect line-border" style="background-image: url(img/info-sect1.png);">
+        <div class="container">
+          <div class="info-sect__wrapper">
+            <div class="info-sect__block right-end">
+              <h3 class="info-sect__title">Новая эра NextGen игр в Ultra разрешении</h3>
+              <p class="info-sect__text">Сверхпроводник возбудим. Течение среды когерентно концентрирует изобарический квазар. Гетерогенная структура, даже при наличии сильных аттракторов, когерентна</p>
+              <div class="block-btn">
+                <button class="block-btn__btn"> <span>Подробнее</span></button>
+              </div>
+            </div>
+            <div class="info-sect__wrap-img">     <img class="info-sect__tablet-img" src="img/info-sect1.png"></div>
+          </div>
+        </div>
+      </section>
+      <section class="info-sect info-sect--two line-border" style="background-image: url(img/info-sect2.png);">
+        <div class="container">
+          <div class="info-sect__wrapper info-sect__wrapper--change">
+            <div class="info-sect__block">
+              <h3 class="info-sect__title">Непревзойденная вычислительная мощь для творчества и работы</h3>
+              <p class="info-sect__text">Сверхпроводник возбудим. Течение среды когерентно концентрирует изобарический квазар. Гетерогенная структура, даже при наличии сильных аттракторов, когерентна</p>
+              <div class="block-btn">
+                <button class="block-btn__btn"> <span>Подробнее</span></button>
+              </div>
+            </div>
+            <div class="info-sect__wrap-img"><img class="info-sect__tablet-img" src="img/info-sect2.png"></div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <h2 class="title red">Почему мы</h2>
+          <div class="advantages__wrapper"><a class="advantages__block" href="#">
+              <div class="advantages__flex">
+                <div class="post-category__btn">
+                  <div class="post-category__btn-text"> <span>Подробнее</span></div>
+                  <div class="post-category__wrap-arrow"><img class="post-category__arrow" src="img/arrow-btn.svg"></div>
+                </div>
+              </div>
+              <div class="advantages__up">
+                <h4 class="advantages__caption">Профессиональный подбор комплектующих</h4>
+              </div><img class="advantages__img" src="img/advantages1.png"></a><a class="advantages__block" href="#">
+              <div class="advantages__flex">
+                <div class="post-category__btn">
+                  <div class="post-category__btn-text"> <span>Подробнее</span></div>
+                  <div class="post-category__wrap-arrow"><img class="post-category__arrow" src="img/arrow-btn.svg"></div>
+                </div>
+              </div>
+              <div class="advantages__up">
+                <h4 class="advantages__caption">Ускорь свою работу, играй в игры и сэкономь до 30%</h4>
+              </div><img class="advantages__img" src="img/advantages2.png"></a>
+            <div class="advantages__block">
+              <div class="advantages__up">
+                <h4 class="advantages__caption">Более 1 700 собранных компьютеров</h4>
+                <div class="advantages__row"><a class="advantages__link" href="#">Выбрать готовый</a><a class="advantages__link" href="#">Конфигуратор</a></div>
+              </div><img class="advantages__img" src="img/advantages3.png">
+            </div>
+            <div class="advantages__block">
+              <div class="advantages__up">
+                <h4 class="advantages__caption"> Уникальные решения</h4>
+                <div class="advantages__row"><a class="advantages__link" href="#">Узнать больше</a></div>
+              </div><img class="advantages__img" src="img/advantages4.png">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sect-news">
+        <div class="container">
+          <h2 class="title">Новости и события</h2>
+          <div class="sect-news__wrapper"><a class="news-post" href="#">
+              <div class="news-post__wrap-img"><img class="news-post__img" src="img/news-post1.jpg"></div>
+              <div class="news-post__block-text"><span class="news-post__date">5 сентября</span><span class="news-post__text">Сборка компьютера на основе AMD Ryzen 5 2400</span></div></a><a class="news-post" href="#">
+              <div class="news-post__wrap-img"><img class="news-post__img" src="img/news-post2.jpg">
+                <div class="play-video-wrap">
+                  <div class="play-video-wrap__wrap-icon"><img class="play-video-wrap__icon" src="img/play.svg"></div><span class="play-video-wrap__time">05:41</span>
+                </div>
+              </div>
+              <div class="news-post__block-text"><span class="news-post__date">5 сентября</span><span class="news-post__text">Распаковываем MSI GeForce 1660 Ti</span></div></a><a class="news-post" href="#">
+              <div class="news-post__wrap-img"><img class="news-post__img" src="img/news-post3.jpg"></div>
+              <div class="news-post__block-text"><span class="news-post__date">5 сентября</span><span class="news-post__text">Армия богатырей GeForce RTX 2080 Ti</span></div></a><a class="news-post" href="#">
+              <div class="news-post__wrap-img"><img class="news-post__img" src="img/news-post4.jpg"></div>
+              <div class="news-post__block-text"><span class="news-post__date">5 сентября</span><span class="news-post__text">Сборка компьютера на основе AMD Ryzen 5 2400</span></div></a></div>
+          <div class="block-btn block-btn--white">
+            <button class="block-btn__btn"> <span>Все события</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="page-footer container-big">
+        <div class="container">
+          <div class="page-footer__up line-border">
+            <ul class="page-footer__nav">
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Игровые</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Рабочие станции</a></li>
+              <li class="page-footer__item"><a class="page-footer__link" href="#">Собрать ПК</a></li>
+            </ul>
+            <div class="social"><span class="social__text">Мы в соцсетях</span>
+              <ul class="social__list">
+                <li class="social__item"><a class="social__link" href="#">
+                    <div class="social__wrap-icon"><img class="social__icon" src="img/instagram.svg"></div>
+                    <div class="social__wrap-icon"><img class="social__icon" src="img/instagram.svg"></div></a></li>
+                <li class="social__item"><a class="social__link" href="#">
+                    <div class="social__wrap-icon"><img class="social__icon" src="img/facebook.svg"></div>
+                    <div class="social__wrap-icon"><img class="social__icon" src="img/facebook.svg"></div></a></li>
+                <li class="social__item"><a class="social__link" href="#">
+                    <div class="social__wrap-icon"><img class="social__icon" src="img/vk.svg"></div>
+                    <div class="social__wrap-icon"><img class="social__icon" src="img/vk.svg"></div></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-footer__middle line-border">
+            <div class="page-footer__left-block">
+              <ul class="page-footer__list-sm">
+                <li class="page-footer__item-sm"><a class="page-footer__link-sm" href="#">Акции</a></li>
+                <li class="page-footer__item-sm"><a class="page-footer__link-sm" href="#">О нас</a></li>
+                <li class="page-footer__item-sm"><a class="page-footer__link-sm" href="#">Как купить</a></li>
+                <li class="page-footer__item-sm"><a class="page-footer__link-sm" href="#">Доставка</a></li>
+                <li class="page-footer__item-sm"><a class="page-footer__link-sm" href="#">Контакты</a></li>
+              </ul><a class="page-footer__link-red" href="#">Политика конфиденциальности</a><a class="page-footer__link-red" href="#">Пользовательское соглашение</a>
+            </div>
+            <div class="page-footer__center-block">
+              <div class="subscription"><span class="subscription__caption">Быть в курсе событий</span>
+                <form class="subscription__form">
+                  <div class="subscription__wrap">
+                    <div class="subscription__wrap-field">
+                      <input class="subscription__field" type="email" placeholder="Ваш email">
+                    </div>
+                    <div class="block-btn">
+                      <button class="block-btn__btn"> <span>Подписаться</span></button>
+                    </div>
+                  </div>
+                  <label class="check">
+                    <input class="check__input" type="checkbox">
+                    <div class="check__squre"></div><span class="check__text">Я выражаю согласие с <a href="#">Политикой конфиденциальности</a></span>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <div class="page-footer__right-block"><a class="tel" href="tel:">8-800-707-62-52</a><a class="page-footer__link-red" href="#">Заказать звонок</a><span class="page-footer__adrees">Москва, Пятницкое ш. 1/1, стр. 1, корп. 2, 4 эт., оф. 418</span><a class="page-footer__link-red" href="#">info@man-made.com</a><span class="page-footer__adrees">© ManMade все права защищены, 2019</span></div>
+          </div>
+          <!--.page-footer__down
+          .page-footer__row-img
+            img.page-footer__img-pay(src="img/visa.png")
+            img.page-footer__img-pay(src="img/mastercard.png")
+            img.page-footer__img-pay(src="img/paypal.png")
+            
+          .studio
+            a.studio__link(href="#") Создание сайта
+            span.studio__text Very Good
+            
+                
+          -->
+        </div>
+      </section>
+      <div class="modal-container popup" id="modal1">
+        <div class="modal-container__container">
+          <div class="modal-container__wrapper">
+            <div class="my-modal complectation">
+              <div class="my-modal__close close-popup"></div>
+              <div class="my-modal__block">
+                <h3 class="my-modal__title">Заголовок модального окна</h3>
+                <form class="form-modal">
+                  <div class="form-modal__wrapper">
+                    <label class="form-modal__row">
+                      <div class="form-modal__border"></div>
+                      <input class="form-modal__field animate-field" type="text" required><span class="form-modal__description">Имя</span>
+                    </label>
+                    <label class="form-modal__row">
+                      <div class="form-modal__border"></div>
+                      <input class="form-modal__field animate-field" type="tel" required><span class="form-modal__description">Телефон</span>
+                    </label>
+                    <label class="form-modal__row">
+                      <div class="form-modal__border"></div>
+                      <input class="form-modal__field animate-field" type="email" required><span class="form-modal__description">Электронная почта  </span>
+                    </label>
+                    <label class="form-modal__row">
+                      <div class="form-modal__border"></div>
+                      <textarea class="form-modal__textarea animate-field"></textarea><span class="form-modal__description">Комментарий</span>
+                    </label>
+                  </div>
+                  <div class="check-modal">
+                    <label class="check-modal__wrap">
+                      <input class="check-modal__input" type="checkbox">
+                      <div class="check-modal__squre"></div>
+                    </label><span class="check-modal__text">Я выражаю согласие с <a href="#">Политикой конфиденциальности</a></span>
+                  </div>
+                  <div class="block-btn">
+                    <button class="block-btn__btn"> <span>Оформить заказ</span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/sticky-kit.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

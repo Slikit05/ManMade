@@ -1,0 +1,89 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+    
+    include includes/link.pug
+    
+  body
+    header.wrapper-color
+      .container-big
+        include includes/header.pug
+        .wrapper-bg.wrapper-bg--change
+
+          include includes/header-down.pug
+
+          section.bread-crumbs
+            .container
+              .bread-crumbs__wrapper
+                .container-two
+                  ul.bread-crumbs__list
+                    li.bread-crumbs__item
+                      a.bread-crumbs__link(href="#") Главная
+                    li.bread-crumbs__item
+                      a.bread-crumbs__link(href="#") Акции
+                    li.bread-crumbs__item
+                      span.bread-crumbs__link.bread-crumbs__link--active При покупке RTX 2080 в подарок 3 игры
+                  
+      include includes/line-form.pug            
+
+          
+              
+              
+    main          
+      section.inner-page
+        .container
+          .container-two
+            h2.title-page Доставка
+            .content-wrapper
+              .text-area-wrap
+                blockquote В каталоге сайта, стоимость товара указана в рублях, все налоги включены в стоимость. Оплата принимается только в российских рублях
+                p Обращаем ваше внимание, что при заказе товара стоимостью более 100 000 рублей может потребоваться авансовый платеж в размере от 50 до 100% предоплаты. О её необходимости Вам сообщит менеджер интернет-магазина. Заказы по РФ и СНГ, а также международные заказы, принимаются по 100% предоплате.
+
+              
+              .content-info-block
+                .content-info-block__wrapper
+                  .content-info-block__block-text
+                    h4 Наличными
+                    p Оплата наличными возможна в случае заказа по Москве и МО и принимается в российских рублях в нашем магазине или курьеру при получении товара после проверки работоспособности и внешнего вида изделия. Предоставляется накладная и кассовый чек.
+                      
+                  .content-info-block__wrap-img
+                    img.content-info-block__img(src="img/cash.jpg")
+                    
+              .content-info-block
+                .content-info-block__wrapper
+                  .content-info-block__wrap-img
+                    img.content-info-block__img(src="img/card.jpg")
+                    
+                  .content-info-block__block-text.offset-left
+                    h4 Безналичными
+                    p Вы можете оплатить заказ как при помощи банковской карты, так и по счёту из любой точки мира. При оплате банковской картой комиссия не взимается. При оплате по счёту, размер комиссии зависит от условий банка, в котором производится оплата. Мы принимаем пластиковые карты международных платежных систем МИР, VISA, MasterCard и т.д.
+                      
+              .content-info-block
+                .content-info-block__wrapper
+                  .content-info-block__block-text
+                    h4 Международная
+                    p После подтверждения заказа и подписания договора, вам придет счет в электронном письме
+                    p Для представителей юридических лиц обязательно предоставление реквизитов организации (наименование организации, ИНН, КПП, юридический адрес, банковские реквизиты) и документов, удостоверяющих право получения товаров (доверенность), оформленных надлежащим образом, независимо от формы оплаты. Не допускаются доверенности, подписанные лицом, действующим «на основании приказа» и/или «на основании доверенности». Исключение составляют доверенности, выданные в порядке передоверия, заверенные нотариально
+                      
+                  .content-info-block__wrap-img
+                    img.content-info-block__img(src="img/payments.jpg")        
+
+              
+            
+                  
+       
+          
+                    
+                  
+      
+      
+    footer.offset-bottom
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

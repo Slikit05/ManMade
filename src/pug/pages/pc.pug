@@ -1,0 +1,422 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+
+    include includes/link.pug
+
+  body
+    header.wrapper-violet-color.wrapper-color.wrapper-color--violet
+      .container-big
+        include includes/header.pug
+        .wrapper-bg.wrapper-bg--change
+
+          include includes/header-down.pug
+
+          section.bread-crumbs
+            .container
+              .bread-crumbs__wrapper
+                ul.bread-crumbs__list
+                  li.bread-crumbs__item(data-page-link="2")
+                    a.bread-crumbs__link(href="#") Главная
+                  li.bread-crumbs__item(data-page-link="1")
+                    span.bread-crumbs__link.bread-crumbs__link--active BASE
+
+          section.first-screen.line-border
+            .container
+              .first-screen__wrapper.first-screen__wrapper--change.flex-wrap-pc-change
+              
+                .first-screen__left-block.first-screen__left-block--change
+                  .first-screen__up
+                    h2.first-screen__title Epic H7-C1
+                    p.first-screen__text Побеждай на Ultra-настройках в самых современных играх в 4к разрешении без тормозов и лагов. Строй любые математические модели и компилируй любой программный код                    
+                  .first-screen__down  
+
+                    .first-screen__row
+                      span.first-screen__old-price 150 990 руб.
+                      span.first-screen__price 120 990 руб.
+                      .first-screen__block
+                        span.first-screen__sm-text Выгода
+                        span.first-screen__price-sm 30 000 рублей
+
+                    .garantie
+                      .garantie__icon
+                        span.garantie__number 2
+                      .garantie__wrap
+                        span.garantie__caption Гарантия
+                        span.garantie__text 2 года
+
+                    .first-screen__flex
+                      .block-btn
+                        button.block-btn__btn 
+                          span Купить
+                      .block-btn.block-btn--white-two
+                        button.block-btn__btn
+                          span Конфигуратор
+
+
+                .first-screen__right-block.pc-block-img
+                  img.first-screen__img(src="img/img-pc.png")
+
+      include includes/line-form.pug
+
+
+    main.wrapper-violet-color
+
+      section.info-sect.info-sect--none-margin.line-border(style="background-image: url(img/info-sect3.png)")
+        .container
+          .info-sect__wrapper
+            .info-sect__block.right-end
+              h3.info-sect__title Новая эра NextGen игр в Ultra разрешении
+              p.info-sect__text Сверхпроводник возбудим. Течение среды когерентно концентрирует изобарический квазар. Гетерогенная структура, даже при наличии сильных аттракторов, когерентна
+              img.info-sect__img(src="img/geforce_rtx.png")
+            .info-sect__wrap-img      
+              img.info-sect__tablet-img(src="img/info-sect3.png")  
+
+
+      section.info-sect.info-sect--none-margin.info-sect--two.line-border(style="background-image: url(img/info-sect4.png)")
+        .container
+          .info-sect__wrapper.info-sect__wrapper--change
+            .info-sect__block
+              h3.info-sect__title Процессор Inter Core i7 9900K
+              p.info-sect__text Кварк представляет собой квантовый лептон, и это неудивительно, если вспомнить квантовый характер явления. Кристалл нейтрализует магнит. Молекула, как можно показать с помощью не совсем тривиальных вычислений, однородно возбуждает короткоживущий магнит вне зависимости от предсказаний
+            .info-sect__wrap-img      
+              img.info-sect__tablet-img(src="img/info-sect4.png")  
+
+
+      section.info-sect.info-sect--none-margin(style="background-image: url(img/info-sect5.png)")
+        .container
+          .info-sect__wrapper
+            .info-sect__block.right-end
+              h3.info-sect__title Охлаждение
+              p.info-sect__text Кварк представляет собой квантовый лептон, и это неудивительно, если вспомнить квантовый характер явления. Кристалл нейтрализует магнит. Молекула, как можно показать с помощью не совсем тривиальных вычислений, однородно возбуждает короткоживущий магнит вне зависимости от предсказаний
+            .info-sect__wrap-img      
+              img.info-sect__tablet-img(src="img/info-sect5.png")  
+
+      section.performance
+        .container
+          h2.title.violet Производительность
+          span.subtitle в современных играх на ультра настройках
+          .performance-tabs
+
+            .performance-tabs__item.performance-tabs__item--active(rel="content1")
+              span.performance-tabs__text 1920 х 1080 (Full HD)
+
+            .performance-tabs__item(rel="content2")
+              span.performance-tabs__text 3860 х 2160 (Ultra HD 4k)
+
+            .performance-tabs__item(rel="content3")
+              span.performance-tabs__text 7680 х 4320 (Ultra HD 8k)
+
+          .performance__wrapper
+
+            .performance__tab-content.performance__tab-content--active.none-progres(id="content1")
+              .performance-table
+                .performance-table__up
+                  span.performance-table__text Не комфортно (менее 30 FPS)
+                  span.performance-table__text Очень комфортно (60 FPS)
+                .performance-table__down
+
+                  .performance-table__row(id="game1")
+                    h3.performance-table__title Ведьмак 3
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 42.5%;")
+                            span.performance-table__value 94.6 FPS
+                            include includes/hint.pug
+
+                  .performance-table__row(id="game2")
+                    h3.performance-table__title PUBG
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 44.2%;")
+                            span.performance-table__value 118 FPS
+                            include includes/hint.pug
+
+                  .performance-table__row(id="game3")
+                    h3.performance-table__title World of Warcraft
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 78.7%;")
+                            span.performance-table__value 318 FPS
+                            include includes/hint.pug
+
+                  .performance-table__row(id="game4")
+                    h3.performance-table__title Battlefield V
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 22.9%;")
+                            span.performance-table__value 48 FPS
+                            include includes/hint.pug
+
+            .performance__tab-content(id="content2")
+              .performance-table
+                .performance-table__up
+                  span.performance-table__text Не комфортно (менее 30 FPS)
+                  span.performance-table__text Очень комфортно (60 FPS)
+                .performance-table__down
+
+                  .performance-table__row(id="game1")
+                    h3.performance-table__title Ведьмак 3
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 60.5%;")
+                            span.performance-table__value 94.6 FPS
+                            include includes/hint.pug
+
+                  .performance-table__row(id="game2")
+                    h3.performance-table__title PUBG
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 34.2%;")
+                            span.performance-table__value 118 FPS
+                            include includes/hint.pug
+
+                  .performance-table__row(id="game3")
+                    h3.performance-table__title World of Warcraft
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 28.7%;")
+                            span.performance-table__value 318 FPS
+                            include includes/hint.pug
+
+                  .performance-table__row(id="game4")
+                    h3.performance-table__title Battlefield V
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 62.9%;")
+                            span.performance-table__value 48 FPS
+                            include includes/hint.pug
+
+            .performance__tab-content(id="content3")
+              .performance-table
+                .performance-table__up
+                  span.performance-table__text Не комфортно (менее 30 FPS)
+                  span.performance-table__text Очень комфортно (60 FPS)
+                .performance-table__down
+
+                  .performance-table__row(id="game1")
+                    h3.performance-table__title Ведьмак 3
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 32.5%;")
+                            span.performance-table__value 94.6 FPS
+                            include includes/hint.pug
+
+                  .performance-table__row(id="game2")
+                    h3.performance-table__title PUBG
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 54.2%;")
+                            span.performance-table__value 118 FPS
+                            include includes/hint.pug
+
+                  .performance-table__row(id="game3")
+                    h3.performance-table__title World of Warcraft
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 68.7%;")
+                            span.performance-table__value 318 FPS
+                            include includes/hint.pug
+
+                  .performance-table__row(id="game4")
+                    h3.performance-table__title Battlefield V
+                    .performance-table__wrapper
+                      .performance-table__block
+                        .performance-table__progres
+                          .performance-table__progres-flex
+                            .performance-table__line(style="width: 72.9%;")
+                            span.performance-table__value 48 FPS
+                            include includes/hint.pug             
+
+
+      section.accessoires
+        .container
+          h2.title Комплектующие
+          .accessoires__wrapper
+            .accessoires__left-block
+              .accessoires__row
+                span.accessoires__caption Игровая видеокарта
+                .accessoires__block-text
+                  span.accessoires__text 8 Gb MSI GeForce 2070 Super 
+              .accessoires__row
+                span.accessoires__caption Материнская плата
+                .accessoires__block-text
+                  span.accessoires__text MSI B360 GAMING PLUS 
+              .accessoires__row
+                span.accessoires__caption Оперативная память
+                .accessoires__block-text
+                  span.accessoires__text 2 x 16 Gb DDR4 Korsair
+              .accessoires__row
+                span.accessoires__caption Накопители
+                .accessoires__block-text
+                  span.accessoires__text 2 х SSD Samsung 950 EVO Raid Stripe 0
+                  span.accessoires__text 2 Tb HDD Seagate Barracuda 16 Mb Cache
+              .accessoires__row
+                span.accessoires__caption Охлаждение
+                .accessoires__block-text
+                  span.accessoires__text Noctua
+              .accessoires__row
+                span.accessoires__caption Игровая видеокарта
+                .accessoires__block-text
+                  span.accessoires__text 8 Gb MSI GeForce 2070 Super 
+              .accessoires__row
+                span.accessoires__caption Материнская плата
+                .accessoires__block-text
+                  span.accessoires__text MSI B360 GAMING PLUS 
+              .accessoires__row
+                span.accessoires__caption Оперативная память
+                .accessoires__block-text
+                  span.accessoires__text 2 x 16 Gb DDR4 Korsair
+              .accessoires__row
+                span.accessoires__caption Накопители
+                .accessoires__block-text
+                  span.accessoires__text 2 х SSD Samsung 950 EVO Raid Stripe 0
+                  span.accessoires__text 2 Tb HDD Seagate Barracuda 16 Mb Cache
+              .accessoires__row
+                span.accessoires__caption Охлаждение
+                .accessoires__block-text
+                  span.accessoires__text Noctua
+
+            .accessoires__right-block
+              .accessoires__left-wrap
+                .accessoires__up-wrap
+                  h3.accessoires__title Epic H7-C1
+                  span.accessoires__price-old 150 990 руб.
+                  .accessoires__row-text
+                    span.accessoires__price 120 990 руб.
+                    .accessoires__block
+                      span.accessoires__caption-sm Выгода
+                      span.accessoires__price-sm 30 000 рублей
+
+                  .garantie
+                    .garantie__icon
+                      span.garantie__number 2
+                    .garantie__wrap
+                      span.garantie__caption Гарантия
+                      span.garantie__text 2 года
+
+                .accessoires__flex    
+                  .block-btn
+                    button.block-btn__btn 
+                      span Купить
+                  .block-btn.block-btn--white
+                    button.block-btn__btn
+                      span Конфигуратор
+
+              .download-block
+                h4.download-block__title Полезные материалы
+
+                a.download-block__row(href="#")
+                  img.download-block__icon(src="img/download-icon.svg")
+                  .download-block__block-text
+                    span.download-block__caption Руководство пользователя
+                    span.download-block__text PDF 2 Mb
+
+                a.download-block__row(href="#")
+                  img.download-block__icon(src="img/download-icon.svg")
+                  .download-block__block-text
+                    span.download-block__caption Сертификат соответствия
+                    span.download-block__text PDF 2 Mb
+
+      section.gallery
+        h2.title.violet Фотогалерея
+        .gallery-slider.swiper-container
+          .gallery-slider__wrapper.swiper-wrapper
+            .gallery-slider__slide.swiper-slide
+              a.gallery-slider__wrap-img(href="img/gallery1.jpg" data-fancybox="gallery")
+                img.gallery-slider__img(src="img/gallery1.jpg")
+            .gallery-slider__slide.swiper-slide
+              a.gallery-slider__wrap-img(href="img/gallery2.jpg" data-fancybox="gallery")
+                img.gallery-slider__img(src="img/gallery2.jpg")
+            .gallery-slider__slide.swiper-slide
+              a.gallery-slider__wrap-img(href="img/gallery3.jpg" data-fancybox="gallery")
+                img.gallery-slider__img(src="img/gallery3.jpg")
+            .gallery-slider__slide.swiper-slide
+              a.gallery-slider__wrap-img(href="img/gallery1.jpg" data-fancybox="gallery")
+                img.gallery-slider__img(src="img/gallery1.jpg")
+            .gallery-slider__slide.swiper-slide
+              a.gallery-slider__wrap-img(href="img/gallery2.jpg" data-fancybox="gallery")
+                img.gallery-slider__img(src="img/gallery2.jpg")
+            .gallery-slider__slide.swiper-slide
+              a.gallery-slider__wrap-img(href="img/gallery3.jpg" data-fancybox="gallery")
+                img.gallery-slider__img(src="img/gallery3.jpg")
+
+          .gallery-slider__arrow.gallery-slider__arrow--prev
+            img(src="img/arrow.svg")
+          .gallery-slider__arrow.gallery-slider__arrow--next
+            img(src="img/arrow.svg")
+
+      section.category
+        .container
+          h2.title.violet Другие серии компьютеров
+          .category__wrapper
+
+            a.post-complectation(href="#")
+              .post-complectation__up
+                h3.post-complectation__title Rare
+                p.post-complectation__text Недорогие компьютеры обеспечивают необходимую производительность для большинства современных игр, работы и учебы
+                .post-complectation__link Подробнее
+              .post-complectation__wrap
+                img.post-complectation__img(src="img/complecting2.png")
+
+            a.post-complectation(href="#")
+              .post-complectation__up
+                h3.post-complectation__title Epic
+                p.post-complectation__text Недорогие компьютеры обеспечивают необходимую производительность для большинства современных игр, работы и учебы
+                .post-complectation__link Подробнее
+              .post-complectation__wrap
+                img.post-complectation__img(src="img/complecting3.png")
+
+            a.post-complectation.post-complectation--big(href="#")
+              .post-complectation__up
+                h3.post-complectation__title Legendary
+                p.post-complectation__text Недорогие компьютеры обеспечивают необходимую производительность для большинства современных игр, работы и учебы
+                .post-complectation__link Подробнее
+              .post-complectation__wrap
+                img.post-complectation__img(src="img/complecting4.png")
+
+      section.type-pc
+        .container
+          h3.type-pc__title Вы смотрели
+          .type-pc__wrapper
+
+            include includes/type-pc-post.pug
+
+
+
+
+
+
+
+    footer.wrapper-violet-color.offset-bottom
+      include includes/footer.pug
+
+
+
+
+    include includes/script.pug

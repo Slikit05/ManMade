@@ -1,0 +1,42 @@
+.modal-container.popup(id="modal1")
+  
+  .modal-container__container
+    .modal-container__wrapper
+
+
+      .my-modal.complectation
+        .my-modal__close.close-popup
+        .my-modal__block
+          h3.my-modal__title Заголовок модального окна
+          form.form-modal
+            .form-modal__wrapper
+            
+              label.form-modal__row
+                .form-modal__border
+                input.form-modal__field.animate-field(type="text" required)
+                span.form-modal__description Имя
+                
+              label.form-modal__row
+                .form-modal__border
+                input.form-modal__field.animate-field(type="tel" required)
+                span.form-modal__description Телефон
+                
+              label.form-modal__row
+                .form-modal__border
+                input.form-modal__field.animate-field(type="email" required)
+                span.form-modal__description Электронная почта  
+                
+              label.form-modal__row
+                .form-modal__border
+                textarea.form-modal__textarea.animate-field
+                span.form-modal__description Комментарий
+                
+            .check-modal
+              label.check-modal__wrap
+                input.check-modal__input(type="checkbox")
+                .check-modal__squre
+              span.check-modal__text Я выражаю согласие с <a href="#">Политикой конфиденциальности</a>
+            
+            .block-btn
+              button.block-btn__btn 
+                span Оформить заказ

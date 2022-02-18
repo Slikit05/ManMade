@@ -1,0 +1,290 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+    
+    include includes/link.pug
+    
+  body.body-bg(style="background-image: url(img/conf-bg.png)")
+    header.wrapper-violet-color.wrapper-color.wrapper-color--violet-before
+      .container-big
+        include includes/header.pug
+        .wrapper-bg
+
+          include includes/header-down.pug
+
+          section.bread-crumbs
+            .container
+              .bread-crumbs__wrapper
+                ul.bread-crumbs__list
+                  li.bread-crumbs__item(data-page-link="2")
+                    a.bread-crumbs__link(href="#") Главная
+                  li.bread-crumbs__item(data-page-link="1")
+                    span.bread-crumbs__link.bread-crumbs__link--active BASE
+
+          
+                  
+      include includes/line-form.pug
+              
+              
+    main.wrapper-violet-color
+      section.two-column
+        .container
+          .two-column__wrapper
+            .content
+              .configurate
+                h2.configurate__title Собери свой EPIC
+                
+                .configurate-block
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/cpu.svg")
+                    h4.configurate-block__caption Процессор
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__grid
+                    
+                      .configurate-item
+                        span Intel Core i5-9600K
+                      .configurate-item
+                        span Intel Core i9-9700
+                      .configurate-item
+                        span Intel Core i9-9900K
+                      .configurate-item
+                        span Intel Xeon MP
+                        
+                .configurate-block
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/gpu.svg")
+                    h4.configurate-block__caption Видеокарта
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__grid
+                    
+                      .configurate-item
+                        span 6 Gb GeForce RTX 2060 S
+                      .configurate-item
+                        span 11 Gb GeForce RTX 2070 S
+                      .configurate-item
+                        span ASUS 11 Gb GeForce RTX 2080 Super
+                      .configurate-item
+                        span 6 Gb GeForce 1060
+                      .configurate-item
+                        span 11 Gb GeForce 1080 Ti
+                        
+                .configurate-block
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/ram.svg")
+                    h4.configurate-block__caption Память RAM:
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__row
+                    
+                      .configurate-item
+                        span 250 Gb
+                        
+                      .configurate-contre
+                        .configurate-contre__block
+                          .configurate-contre__minus &mdash;
+                          
+                        .configurate-contre__value
+                          input.configurate-contre__number(type="text" value="0")
+                          span.configurate-contre__text шт.
+                          
+                        .configurate-contre__block  
+                          .configurate-contre__plus +
+                          
+                    .configurate-block__row
+                    
+                      .configurate-item
+                        span 16 Gb DDR4
+                        
+                      .configurate-contre
+                        .configurate-contre__block
+                          .configurate-contre__minus &mdash;
+                          
+                        .configurate-contre__value
+                          input.configurate-contre__number(type="text" value="0")
+                          span.configurate-contre__text шт.
+                          
+                        .configurate-contre__block  
+                          .configurate-contre__plus +
+                          
+                    .configurate-block__row
+                    
+                      .configurate-item
+                        span 32 Gb DDR4
+                        
+                      .configurate-contre
+                        .configurate-contre__block
+                          .configurate-contre__minus &mdash;
+                          
+                        .configurate-contre__value
+                          input.configurate-contre__number(type="text" value="0")
+                          span.configurate-contre__text шт.
+                          
+                        .configurate-contre__block  
+                          .configurate-contre__plus +
+                          
+                .configurate-block
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/hdd.svg")
+                    h4.configurate-block__caption Накопители
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__row
+                    
+                      .configurate-item
+                        span 250 Gb SSD
+                        
+                      .configurate-contre
+                        .configurate-contre__block
+                          .configurate-contre__minus &mdash;
+                          
+                        .configurate-contre__value
+                          input.configurate-contre__number(type="text" value="0")
+                          span.configurate-contre__text шт.
+                          
+                        .configurate-contre__block  
+                          .configurate-contre__plus +
+                          
+                    .configurate-block__row
+                    
+                      .configurate-item
+                        span 2 Tb HDD
+                        
+                      .configurate-contre
+                        .configurate-contre__block
+                          .configurate-contre__minus &mdash;
+                          
+                        .configurate-contre__value
+                          input.configurate-contre__number(type="text" value="0")
+                          span.configurate-contre__text шт.
+                          
+                        .configurate-contre__block  
+                          .configurate-contre__plus +
+                          
+                          
+                .configurate-block
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/cooling.svg")
+                    h4.configurate-block__caption Охлаждение
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__grid
+                    
+                      .configurate-item
+                        span Воздушное
+                      .configurate-item
+                        span Водяное
+                          
+                .configurate-block
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/case.svg")
+                    h4.configurate-block__caption Корпус
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .corps
+                      .corps__wrapper
+                      
+                        label.corps-block
+                          input.corps-block__input(type="radio" name="corps")
+                          .corps-block__wrap
+                            img.corps-block__img(src="img/corp.png")
+                            .corps-block__squre
+                            span.corps-block__name Thermalrake Case
+                            
+                        label.corps-block
+                          input.corps-block__input(type="radio" name="corps")
+                          .corps-block__wrap
+                            img.corps-block__img(src="img/corp.png")
+                            .corps-block__squre
+                            span.corps-block__name Cougar 500W
+                            
+                        label.corps-block
+                          input.corps-block__input(type="radio" name="corps")
+                          .corps-block__wrap
+                            img.corps-block__img(src="img/corp.png")
+                            .corps-block__squre
+                            span.corps-block__name Thermalrake Case
+                            
+            .right-column
+              .sidebar
+                .stick-block
+                  .price-block-info
+                    .good-info-block
+
+                      .good-info-block__row
+                        span.good-info-block__caption Процессор:
+                        span.good-info-block__text Intel Core i5 9600K
+
+                      .good-info-block__row
+                        span.good-info-block__caption Охлаждение:
+                        span.good-info-block__text Thermaltake Pacific M360 Plus D5 Hard Tube Water Cooling Kit
+
+                      .good-info-block__row
+                        span.good-info-block__caption Видеокарта:
+                        span.good-info-block__text MSI GeForce 2070  8 Gb
+
+                      .good-info-block__row
+                        span.good-info-block__caption Память RAM:
+                        span.good-info-block__text 2 x 16 Gb DDR4 3600 Corsair
+
+                      .good-info-block__row
+                        span.good-info-block__caption Накопители:
+                        span.good-info-block__text 250 Gb SSD Samsung EVO 950,2 Tb Seagate Barracuda
+
+                      .good-info-block__row
+                        span.good-info-block__caption Мат. плата:
+                        span.good-info-block__text MSI B360M PRO-Vh
+
+                      .good-info-block__row
+                        span.good-info-block__caption Корпус:
+                        span.good-info-block__text Cougar MX330-F черный
+
+                    .good-price-block
+                      .good-price-block__left
+                        span.good-price-block__old-price 150 990 руб.
+                        span.good-price-block__price 120 990 руб.
+                      .good-price-block__right
+                        span.good-price-block__caption Выгода
+                        span.good-price-block__sm-price 30 000 рублей
+
+                    .garantie
+                      .garantie__icon
+                        span.garantie__number 2
+                      .garantie__wrap
+                        span.garantie__caption Гарантия
+                        span.garantie__text 2 года
+
+                    .row-btn
+                      .block-btn
+                        button.block-btn__btn 
+                          span Купить
+                      .block-btn.block-btn--white-two
+                        button.block-btn__btn
+                          span Нужна помощь?
+      
+            
+            
+      
+                    
+                  
+      
+      
+    footer.wrapper-violet-color.offset-bottom
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug
+    
+    script(src="js/function.price.block.js")    

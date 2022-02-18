@@ -1,0 +1,65 @@
+include cart.pug
+include mob-menu.pug
+section.header
+
+  .search-line
+    .container
+      form.search-line__form
+        .search-line__wrapper
+          label.search-line__wrap
+            input.search-line__field(type="text" placeholder="Поиск")
+          button.search-line__icon
+            img(src="img/search-icon2.svg")
+          .search-line__close
+      .search-line__middle
+        .search-results
+          img.search-results__img(src="img/corp.png")
+          .search-results__block-text
+            span.search-results__caption Компьтер Epic E1 c GeForce RTX 2080 Ti
+            a.search-results__link(href="#") Игровые компьютеры
+        .search-results
+          img.search-results__img(src="img/corp.png")
+          .search-results__block-text
+            span.search-results__caption Nvidia запускает серию видеокарт GeForce 20ХХ
+            a.search-results__link(href="#") Новости
+      .search-line__down
+        a.search-line__all-results(href="#") Все результаты
+        span.search-line__value 28
+
+
+
+  .header-up
+    .container
+      .header-up__wrapper
+        a.logo(href="#")
+          img.logo__img(src="img/logo.svg")
+          .logo__wrap
+            img(src="img/logo-text.svg")
+        .burger
+          .burger__wrapper
+            .burger__line
+            .burger__line
+            .burger__line
+
+        .header-up__nav
+          ul.header-up__list
+            li.header-up__item
+              a.header-up__link(href="#") Игровые
+            li.header-up__item
+              a.header-up__link(href="#") Рабочие станции
+            li.header-up__item
+              a.header-up__link(href="#") Собрать ПК
+
+        .header-up__block
+          .header-up__search-icon
+            img(src="img/search.svg")
+          .cart
+            .cart__wrap
+              .cart__circle
+              img.cart__img(src="img/shopping-cart.svg")
+            .cart__block-text
+              span.cart__caption Мой заказ
+              span.cart__price 150 380 руб.
+
+
+

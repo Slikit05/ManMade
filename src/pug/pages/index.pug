@@ -1,0 +1,229 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+    
+    include includes/link.pug
+    
+  body
+    header.wrapper-color
+      .container-big
+        include includes/header.pug
+        .wrapper-bg(style="background-image: url(img/)")
+
+            include includes/header-down.pug
+
+            section.first-screen
+              .first-slider.swiper-container
+                .first-slider__wrapper.swiper-wrapper
+
+                  .first-slider__slide.swiper-slide
+                    .first-slider__wrap
+                      picture
+                        source(srcset="img/banner-mob.jpg" media="(max-width: 480px)")
+                        img.first-slider__img(src="img/banner.jpg" alt="")
+                      //img.first-slider__img(src="img/banner.jpg")
+                      //.container
+                        .first-slider__block-text
+                          h2.first-slider__title Мощь. Впечатляет
+                          p.first-slider__text Сверхпроводник возбудим. Течение среды когерентно концентрирует изобарический квазар. Гетерогенная структура
+                          .first-slider__row
+                            span.first-slider__price 221 990 руб.
+                            img.first-slider__img(src="img/intel-inside.png")
+                          .block-btn
+                            button.block-btn__btn 
+                              span Подробнее
+
+                  .first-slider__slide.swiper-slide
+                    .first-slider__wrap
+                      .first-video
+                        video.first-video__video(autoplay loop preload="auto" muted="muted")
+                          source(src="video/comp.mp4" type="video/mp4")
+                        img.first-video__img-mob(src="img/banner-mob2.jpg" alt="")
+                      //.container
+                        .first-slider__block-text
+                          h2.first-slider__title Мощь. Впечатляет
+                          p.first-slider__text Сверхпроводник возбудим. Течение среды когерентно концентрирует изобарический квазар. Гетерогенная структура
+                          .first-slider__row
+                            span.first-slider__price 221 990 руб.
+                            img.first-slider__img(src="img/intel-inside.png")
+                          .block-btn
+                            button.block-btn__btn 
+                              span Подробнее
+
+                .first-slider__arrow-row
+                  .first-slider__arrow.first-slider__arrow--prev
+                    img(src="img/arrow.svg")
+                  .first-slider__arrow.first-slider__arrow--next
+                    img(src="img/arrow.svg")
+
+                .first-slider__down
+                  .container
+                    .first-slider__down-wrapper
+                      .first-slider__pagination
+                
+          
+    main
+      section.sect-category.line-border
+        .container
+          .sect-category__wrapper
+            
+            a.post-category(href="#")
+              .post-category__wrap(style="background-image: url(img/post-category1.png)")
+                .post-category__up
+                  h4.post-category__caption Для игры
+                  span.post-category__text от 130 000 руб.
+                .post-category__down
+                  .post-category__btn
+                    .post-category__btn-text 
+                      span Подробнее
+                    .post-category__wrap-arrow
+                      img.post-category__arrow(src="img/arrow-btn.svg")
+                      
+            a.post-category(href="#")
+              .post-category__wrap(style="background-image: url(img/post-category2.png)")
+                .post-category__up
+                  h4.post-category__caption Для работы
+                  span.post-category__text от 250 000 руб.
+                .post-category__down
+                  .post-category__btn
+                    .post-category__btn-text 
+                      span Подробнее
+                    .post-category__wrap-arrow
+                      img.post-category__arrow(src="img/arrow-btn.svg")
+                      
+            a.post-category(href="#")
+              .post-category__wrap(style="background-image: url(img/post-category3.png)")
+                .post-category__up
+                  h4.post-category__caption Конструктор
+                  span.post-category__text Собери свой компьютер
+                .post-category__down
+                  .post-category__btn
+                    .post-category__btn-text 
+                      span Подробнее
+                    .post-category__wrap-arrow
+                      img.post-category__arrow(src="img/arrow-btn.svg")
+                      
+      section.info-sect.line-border(style="background-image: url(img/info-sect1.png)")
+        .container
+          .info-sect__wrapper
+            .info-sect__block.right-end
+              h3.info-sect__title Новая эра NextGen игр в Ultra разрешении
+              p.info-sect__text Сверхпроводник возбудим. Течение среды когерентно концентрирует изобарический квазар. Гетерогенная структура, даже при наличии сильных аттракторов, когерентна
+              .block-btn
+                button.block-btn__btn 
+                  span Подробнее
+            .info-sect__wrap-img      
+              img.info-sect__tablet-img(src="img/info-sect1.png")
+                
+      section.info-sect.info-sect--two.line-border(style="background-image: url(img/info-sect2.png)")
+        .container
+          .info-sect__wrapper.info-sect__wrapper--change
+            .info-sect__block
+              h3.info-sect__title Непревзойденная вычислительная мощь для творчества и работы
+              p.info-sect__text Сверхпроводник возбудим. Течение среды когерентно концентрирует изобарический квазар. Гетерогенная структура, даже при наличии сильных аттракторов, когерентна
+              .block-btn
+                button.block-btn__btn 
+                  span Подробнее
+            .info-sect__wrap-img
+              img.info-sect__tablet-img(src="img/info-sect2.png")      
+                
+                
+      section.advantages
+        .container
+          h2.title.red Почему мы
+          .advantages__wrapper
+          
+            a.advantages__block(href="#")
+              .advantages__flex
+                .post-category__btn
+                  .post-category__btn-text 
+                    span Подробнее
+                  .post-category__wrap-arrow
+                    img.post-category__arrow(src="img/arrow-btn.svg")
+              .advantages__up
+                h4.advantages__caption Профессиональный подбор комплектующих
+              img.advantages__img(src="img/advantages1.png")
+              
+            a.advantages__block(href="#")
+              .advantages__flex
+                .post-category__btn
+                  .post-category__btn-text 
+                    span Подробнее
+                  .post-category__wrap-arrow
+                    img.post-category__arrow(src="img/arrow-btn.svg")
+              .advantages__up
+                h4.advantages__caption Ускорь свою работу, играй в игры и сэкономь до 30%
+              img.advantages__img(src="img/advantages2.png")
+              
+            .advantages__block
+              .advantages__up
+                h4.advantages__caption Более 1 700 собранных компьютеров
+                .advantages__row
+                  a.advantages__link(href="#") Выбрать готовый
+                  a.advantages__link(href="#") Конфигуратор
+              img.advantages__img(src="img/advantages3.png")
+              
+            .advantages__block
+              .advantages__up
+                h4.advantages__caption  Уникальные решения
+                .advantages__row
+                  a.advantages__link(href="#") Узнать больше
+              img.advantages__img(src="img/advantages4.png")
+              
+      section.sect-news
+        .container
+          h2.title Новости и события
+          
+          .sect-news__wrapper
+          
+            a.news-post(href="#")
+              .news-post__wrap-img
+                img.news-post__img(src="img/news-post1.jpg")
+              .news-post__block-text
+                span.news-post__date 5 сентября
+                span.news-post__text Сборка компьютера на основе AMD Ryzen 5 2400
+                
+            a.news-post(href="#")
+              .news-post__wrap-img
+                img.news-post__img(src="img/news-post2.jpg")
+                .play-video-wrap
+                  .play-video-wrap__wrap-icon
+                    img.play-video-wrap__icon(src="img/play.svg")
+                  span.play-video-wrap__time 05:41
+              .news-post__block-text
+                span.news-post__date 5 сентября
+                span.news-post__text Распаковываем MSI GeForce 1660 Ti
+                
+            a.news-post(href="#")
+              .news-post__wrap-img
+                img.news-post__img(src="img/news-post3.jpg")
+              .news-post__block-text
+                span.news-post__date 5 сентября
+                span.news-post__text Армия богатырей GeForce RTX 2080 Ti
+                
+            a.news-post(href="#")
+              .news-post__wrap-img
+                img.news-post__img(src="img/news-post4.jpg")
+              .news-post__block-text
+                span.news-post__date 5 сентября
+                span.news-post__text Сборка компьютера на основе AMD Ryzen 5 2400
+                
+          .block-btn.block-btn--white
+            button.block-btn__btn 
+              span Все события
+                
+      
+                    
+                  
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

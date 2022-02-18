@@ -1,0 +1,584 @@
+.configurate {
+  padding: 58px 0 60px;
+
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 300;
+    margin-bottom: 37px;
+  }
+}
+
+.configurate-block {
+  margin-bottom: 53px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &__up {
+    display: flex;
+    align-items: center;
+  }
+
+  &__caption {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-right: 18px;
+  }
+
+  &__icon {
+    margin-right: 24px;
+  }
+
+  .type-pc-har {
+    &__question {
+      opacity: 1;
+    }
+  }
+
+  &__down {
+    margin-top: 22px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+
+    &--change {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 33px;
+
+    .configurate-item {
+      max-width: 183px;
+      width: 100%;
+      margin-right: 40px;
+    }
+  }
+
+  &--change {
+    margin-bottom: 45px;
+  }
+}
+
+.configurate-item {
+  padding: 5px 10px 5px;
+  cursor: pointer;
+  margin: 0 6px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 56px;
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+    opacity: 0.1;
+    transform: skew(-8deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  &--active {
+    &::before {
+      opacity: 1;
+      border: 1px solid #c657fa;
+    }
+
+    span {
+      color: #C657FA;
+    }
+  }
+}
+
+.configurate-contre {
+  max-width: 208px;
+  position: relative;
+  min-height: 56px;
+  display: flex;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+    opacity: 0.1;
+    transform: skew(-8deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  &--active {
+    &::before {
+      
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+
+    &:last-child {
+      margin-left: -10px;
+    }
+  }
+
+  &__value {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75px;
+    position: relative;
+    margin-left: -10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: skew(-8deg);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__minus {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    outline: inherit;
+    user-select: none;
+  }
+
+  &__plus {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    outline: inherit;
+    user-select: none;
+  }
+
+  &__number {
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 4px;
+    width: 100%;
+    background-color: transparent;
+    text-align: right;
+    max-width: 30px;
+    position: relative;
+    z-index: 4;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    z-index: 4;
+  }
+
+  &--change {
+    max-width: 192px;
+
+    &::before {
+      display: none;
+    }
+
+    .configurate-contre {
+      &__value {
+        margin: 0;
+        width: 96px;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &__block {
+        transition: all 0.3s ease-in-out;
+        width: 48px;
+        margin: 0;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+      }
+
+      &__minus {
+        font-size: 20px;
+        margin: 0;
+        line-height: 20px;
+        padding-bottom: 6px;
+        user-select: none;
+      }
+
+      &__plus {
+        font-size: 30px;
+        line-height: 20px;
+        margin: 0;
+        padding-bottom: 6px;
+        user-select: none;
+      }
+
+      &__number {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+      }
+
+      &__text {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.corps {
+  &__wrapper {
+    display: flex;
+    padding-top: 7px;
+    justify-content: space-between;
+  }
+}
+
+.corps-block {
+  cursor: pointer;
+
+  &__input {
+    display: none;
+  }
+
+  &__img {
+    max-width: 192px;
+    width: 100%;
+    margin-bottom: 24px;
+
+  }
+
+  &__squre {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  &:hover {
+    .corps-block__img {
+      animation: colorHover 5s infinite ease-in-out;
+    }
+  }
+}
+
+.corps-block__input:checked + .corps-block__wrap .corps-block__squre {
+  border-color: #fff;
+}
+
+.corps-block__input:checked + .corps-block__wrap .corps-block__squre::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 5.5px);
+  top: calc(50% - 5.5px);
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.corps-block__input:checked + .corps-block__wrap .corps-block__name {
+  color: #C657FA;
+}
+
+.right-column {
+  height: 100%;
+}
+
+.sidebar {
+  padding-top: 173px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+
+  .garantie {
+    margin-bottom: 18px;
+  }
+}
+
+.stick-block {
+  padding-bottom: 60px;
+}
+
+.good-info-block {
+  margin-bottom: 30px;
+
+  &__row {
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  &__caption {
+    max-width: 112px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-right: 10px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    max-width: 208px;
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 16px;
+    color: #E42245;
+    display: block;
+    margin-top: 16px;
+  }
+}
+
+.good-price-block {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 14px;
+
+  &__left {}
+
+  &__right {
+    padding-bottom: 5px;
+    margin-left: 6.6%;
+  }
+
+  &__old-price {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #fc0073;
+    text-decoration: line-through;
+    display: block;
+  }
+
+  &__price {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    display: block;
+  }
+
+  &__caption {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    opacity: 0.4;
+    text-transform: uppercase;
+    display: block;
+  }
+
+  &__sm-price {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    display: block;
+  }
+}
+
+.row-btn {
+  display: flex;
+
+  .block-btn {
+    width: 100%;
+    max-width: 160px;
+    margin-right: 10px;
+  }
+}
+
+.configurate-tab-content {
+  display: none;
+  //  padding-top: 16px;
+
+  &--open {
+    display: block;
+  }
+}
+
+.configurate-radio {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    label {
+      cursor: pointer;
+    }
+
+    .configurate-contre {
+      min-height: 32px;
+      margin-right: 20px;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right-block {
+    display: flex;
+    align-items: center;
+    width: 46.7%;
+    justify-content: space-between;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__circle {
+    min-width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    margin-right: 16px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__price {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    opacity: 0.5;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    user-select: none;
+  }
+}
+
+.configurate-radio__input:checked + .configurate-radio__circle {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.configurate-radio__input:checked + .configurate-radio__circle::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: calc(50% - 7px);
+  left: calc(50% - 7px);
+  background-color: #fc0073;
+  border-radius: 100px;
+}
+
+.configurate-radio__input:checked + .configurate-radio__wrap .configurate-radio__circle {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.configurate-radio__input:checked + .configurate-radio__wrap .configurate-radio__circle::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: calc(50% - 7px);
+  left: calc(50% - 7px);
+  background-color: #E42245;
+  border-radius: 100px;
+}
+
+.configurate-radio__input:checked + .configurate-radio__wrap + .configurate-radio__right-block .configurate-contre {
+  opacity: 1;
+}
+
+.case-img {
+  margin: 25px 0 8px;
+}

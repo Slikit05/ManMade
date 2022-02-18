@@ -1,0 +1,149 @@
+@media (min-width: 1960px) {
+  .type-pc__wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .wrapper-bg {
+    background-size: cover;
+  }
+
+  .first-screen__wrapper {
+    min-height: 50vh;
+  }
+
+  .first-screen__left-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fixed {
+    .container {
+      max-width: 2000px;
+    }
+  }
+
+  //  .map {
+  //    height: 60vh;
+  //  }
+
+  .contacts-sect__right-block {
+    margin-right: 0;
+  }
+
+  .mob-menu {
+    max-width: 20%;
+    left: -20%;
+
+    &__link {
+      font-size: 1vw;
+      line-height: normal;
+    }
+
+    &--open {
+      left: 0;
+    }
+
+    .logo {
+      max-width: 50%;
+      width: 100%;
+
+      &__img {
+        max-width: inherit;
+      }
+    }
+  }
+
+  .tel {
+    font-size: 0.8vw;
+    line-height: normal;
+  }
+
+  .mob-menu .header-down__link {
+    font-size: 0.6vw;
+    line-height: normal;
+  }
+
+  .cart-block {
+    max-width: 20%;
+    right: -20%;
+
+    &--open {
+      right: 0;
+    }
+
+    &__caption {
+      font-size: 1.1vw;
+      line-height: normal;
+    }
+
+    .block-btn__btn span {
+      font-size: 0.7vw;
+      line-height: normal;
+    }
+
+    &__text {
+      font-size: 0.6vw;
+      line-height: normal;
+    }
+  }
+
+  .cart-good {
+    &__img {
+      max-width: 50%;
+    }
+
+    &__caption {
+      font-size: 1vw;
+      line-height: normal;
+    }
+
+    &__price {
+      font-size: 0.8vw;
+      line-height: normal;
+    }
+
+    &__del {
+      font-size: 0.7vw;
+      line-height: normal;
+    }
+  }
+
+  .first-screen {
+    &__img {
+      margin-top: 0;
+    }
+  }
+  .performance-table__line::before {
+    width: 1200px;
+  }
+  .store-post {
+    min-height: 600px;
+  }
+  .line-form {
+    .container {
+      max-width: 2000px;
+      margin: 0 auto;
+    }
+    &__wrap {
+      justify-content: flex-end;
+    }
+  }
+  
+  .info-sect {
+    background-size: 70%;
+    min-height: 768px;
+    background-position: center;
+  }
+  
+  .first-screen__wrapper--grid .first-screen__down {
+    margin: 0;
+  }
+  .first-screen__block-title {
+    margin: 0;
+  }
+}

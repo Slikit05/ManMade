@@ -1,0 +1,192 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+    
+    include includes/link.pug
+    
+  body
+    header.wrapper-color
+      .container-big
+        include includes/header.pug
+        .wrapper-bg.wrapper-bg--change
+
+          include includes/header-down.pug
+
+          section.bread-crumbs
+            .container
+              .bread-crumbs__wrapper
+                ul.bread-crumbs__list
+                  li.bread-crumbs__item
+                    a.bread-crumbs__link(href="#") Главная
+                  li.bread-crumbs__item
+                    span.bread-crumbs__link.bread-crumbs__link--active Акции
+                  
+      include includes/line-form.pug            
+
+          
+              
+              
+    main          
+      section.inner-page
+        .container
+          h2.title-page Акции
+          
+          .category-tabs
+            ul.category-tabs__list
+              li.category-tabs__tab.category-tabs__tab--active(rel="store1") 
+                span Все акции
+              li.category-tabs__tab(rel="store2") 
+                span СКидки
+              li.category-tabs__tab(rel="store3") 
+                span Подарки
+                
+          .container-tab-wrap.container-tab-wrap--open(id="store1")
+            .store-two-column
+
+              a.store-post(href="#" style="background-image: url(img/store-post1.jpg)")
+                .store-post__flex
+                  .store-post__block-text
+                    span При покупке любого компьютера с RTX 2080 в подарок Control
+
+                  .post-category__btn
+                    .post-category__btn-text 
+                      span Подробнее
+                    .post-category__wrap-arrow
+                      img.post-category__arrow(src="img/arrow-btn.svg")
+
+              a.store-post(href="#" style="background-image: url(img/store-post2.jpg)")
+                .store-post__flex
+                  .store-post__block-text
+                    span При покупке любого компьютера с RTX 2080 в подарок Control22
+
+                  .post-category__btn
+                    .post-category__btn-text 
+                      span Подробнее
+                    .post-category__wrap-arrow
+                      img.post-category__arrow(src="img/arrow-btn.svg")
+                        
+          .container-tab-wrap(id="store2")
+            .store-two-column
+
+              .store-post(style="background-image: url(img/store-post1.jpg)")
+                .store-post__flex
+                  .store-post__block-text
+                    span При покупке любого компьютера с RTX 2080 в подарок Control22
+
+                  .post-category__btn
+                    .post-category__btn-text 
+                      span Подробнее
+                    .post-category__wrap-arrow
+                      img.post-category__arrow(src="img/arrow-btn.svg")
+
+              .store-post(style="background-image: url(img/store-post2.jpg)")
+                .store-post__flex
+                  .store-post__block-text
+                    span При покупке любого компьютера с RTX 2080 в подарок Control33
+
+                  .post-category__btn
+                    .post-category__btn-text 
+                      span Подробнее
+                    .post-category__wrap-arrow
+                      img.post-category__arrow(src="img/arrow-btn.svg")
+                        
+          .container-tab-wrap(id="store3")
+            .store-two-column
+
+              .store-post(style="background-image: url(img/store-post1.jpg)")
+                .store-post__flex
+                  .store-post__block-text
+                    span При покупке любого компьютера с RTX 2080 в подарок Control222
+                  .post-category__btn
+                    .post-category__btn-text 
+                      span Подробнее
+                    .post-category__wrap-arrow
+                      img.post-category__arrow(src="img/arrow-btn.svg")
+
+              .store-post(style="background-image: url(img/store-post2.jpg)")
+                .store-post__flex
+                  .store-post__block-text
+                    span При покупке любого компьютера с RTX 2080 в подарок Control444
+
+                  .post-category__btn
+                    .post-category__btn-text 
+                      span Подробнее
+                    .post-category__wrap-arrow
+                      img.post-category__arrow(src="img/arrow-btn.svg")
+                        
+          .store-wrapper
+            .store-four-column
+              a.news-post(href="#")
+                .news-post__wrap-img
+                  img.news-post__img(src="img/news-post1.jpg")
+                .news-post__block-text
+                  span.news-post__date 5 сентября
+                  span.news-post__text Сборка компьютера на основе AMD Ryzen 5 2400
+
+              a.news-post(href="#")
+                .news-post__wrap-img
+                  img.news-post__img(src="img/news-post2.jpg")
+                .news-post__block-text
+                  span.news-post__date 5 сентября
+                  span.news-post__text Распаковываем MSI GeForce 1660 Ti
+
+              a.news-post(href="#")
+                .news-post__wrap-img
+                  img.news-post__img(src="img/news-post3.jpg")
+                .news-post__block-text
+                  span.news-post__date 5 сентября
+                  span.news-post__text Армия богатырей GeForce RTX 2080 Ti
+
+              a.news-post(href="#")
+                .news-post__wrap-img
+                  img.news-post__img(src="img/news-post4.jpg")
+                .news-post__block-text
+                  span.news-post__date 5 сентября
+                  span.news-post__text Сборка компьютера на основе AMD Ryzen 5 2400
+                  
+              a.news-post(href="#")
+                .news-post__wrap-img
+                  img.news-post__img(src="img/news-post1.jpg")
+                .news-post__block-text
+                  span.news-post__date 5 сентября
+                  span.news-post__text Сборка компьютера на основе AMD Ryzen 5 2400
+
+              a.news-post(href="#")
+                .news-post__wrap-img
+                  img.news-post__img(src="img/news-post2.jpg")
+                .news-post__block-text
+                  span.news-post__date 5 сентября
+                  span.news-post__text Распаковываем MSI GeForce 1660 Ti
+
+              a.news-post(href="#")
+                .news-post__wrap-img
+                  img.news-post__img(src="img/news-post3.jpg")
+                .news-post__block-text
+                  span.news-post__date 5 сентября
+                  span.news-post__text Армия богатырей GeForce RTX 2080 Ti
+
+              a.news-post(href="#")
+                .news-post__wrap-img
+                  img.news-post__img(src="img/news-post4.jpg")
+                .news-post__block-text
+                  span.news-post__date 5 сентября
+                  span.news-post__text Сборка компьютера на основе AMD Ryzen 5 2400    
+          
+            .store-wrapper__down
+              .block-btn.block-btn--white-two
+                button.block-btn__btn 
+                  span Показать еще 10
+                    
+                  
+      
+      
+    footer.offset-bottom
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

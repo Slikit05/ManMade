@@ -1,0 +1,97 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+    
+    include includes/link.pug
+    
+  body
+    header.wrapper-color
+      .container-big
+        include includes/header.pug
+        .wrapper-bg
+
+          include includes/header-down.pug
+
+          section.bread-crumbs
+            .container
+              .bread-crumbs__wrapper
+                  ul.bread-crumbs__list
+                    li.bread-crumbs__item(data-page-link="2")
+                      a.bread-crumbs__link(href="#") Главная
+                    li.bread-crumbs__item(data-page-link="1")
+                      span.bread-crumbs__link.bread-crumbs__link--active Контакты
+                  
+      include includes/line-form.pug            
+
+          
+              
+              
+    main          
+      section.inner-page
+        .container
+          .contacts-sect
+            .contacts-sect__wrapper
+              .contacts-sect__left-block
+                a.contacts-sect__tel(href="tel:") 8-800-707-52-62
+                span.contacts-sect__adrees 127000, Москва, Пятницкое ш. 1/1, стр. 1, корп. 2, 4 эт., оф. 418
+                a.contacts-sect__mail(href="mailto:info@man-made.ru") info@man-made.ru
+                .contacts-sect__row
+                  .contacts-sect__block
+                    a.contacts-sect__sm-tel(href="tel:84952121142") 8 (495) 212-11-42
+                    span.contacts-sect__text Для звонков по Москве
+                  .contacts-sect__block
+                    a.contacts-sect__sm-tel(href="tel:89779200593") 8 (977) 920-05-93
+                    span.contacts-sect__text WhatsApp
+                .contacts-sect__row    
+                  //.block-btn
+                    button.block-btn__btn 
+                      span Обратная связь
+                  .social
+                    ul.social__list
+                      li.social__item
+                        a.social__link(href="#")
+                          .social__wrap-icon
+                            img.social__icon(src="img/instagram.svg")
+                          .social__wrap-icon
+                            img.social__icon(src="img/instagram.svg")
+                      li.social__item
+                        a.social__link(href="#")
+                          .social__wrap-icon
+                            img.social__icon(src="img/facebook.svg")
+                          .social__wrap-icon
+                            img.social__icon(src="img/facebook.svg")
+                      li.social__item
+                        a.social__link(href="#")
+                          .social__wrap-icon
+                            img.social__icon(src="img/vk.svg")
+                          .social__wrap-icon
+                            img.social__icon(src="img/vk.svg")    
+              .contacts-sect__right-block
+                .map(id="map")
+                  
+       
+          
+                    
+                  
+      
+      
+    footer.offset-bottom
+      include includes/footer.pug
+
+      
+                     
+                   
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+    script(src="js/modernizr.js")
+    //script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvK24swPGCjs5VZ81OjIeedL7up5fnOic&callback=initMap")
+    script(src="js/map.js")
+    script(src="js/swiper.min.js")
+    script(src="js/jquery.fancybox.min.js")
+    script(src="js/jquery.inputmask.min.js")
+    script(src="js/sticky-kit.js")
+    script(src="js/main.js")

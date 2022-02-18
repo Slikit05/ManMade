@@ -1,0 +1,87 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+    
+    include includes/link.pug
+    
+  body
+    header.wrapper-color
+      .container-big
+        include includes/header.pug
+        .wrapper-bg.wrapper-bg--change
+
+          include includes/header-down.pug
+
+          section.bread-crumbs
+            .container
+              .bread-crumbs__wrapper
+                .container-two
+                  ul.bread-crumbs__list
+                    li.bread-crumbs__item
+                      a.bread-crumbs__link(href="#") Главная
+                    li.bread-crumbs__item
+                      a.bread-crumbs__link(href="#") Акции
+                    li.bread-crumbs__item
+                      span.bread-crumbs__link.bread-crumbs__link--active При покупке RTX 2080 в подарок 3 игры
+                  
+      include includes/line-form.pug            
+
+          
+              
+              
+    main          
+      section.not-found-page
+        .container
+          .container-two
+            .content-info-block
+              .content-info-block__wrapper.content-info-block__wrapper--change
+                .content-info-block__block-text.content-info-block__block-text--change
+                  h3.not-found-title Something cool is coming soon
+                  p.not-found-text Страница находится в разработке
+                .content-info-block__wrap-img.content-info-block__wrap-img--404
+                  img.content-info-block__img(src="img/404-img.png")
+                  
+            .grid-two-columns
+              a.post-category(href="#")
+                .post-category__wrap(style="background-image: url(img/post-category1.png)")
+                  .post-category__up
+                    h4.post-category__caption Для игры
+                    span.post-category__text от 130 000 руб.
+                  .post-category__down
+                    .post-category__btn
+                      .post-category__btn-text 
+                        span Подробнее
+                      .post-category__wrap-arrow
+                        img.post-category__arrow(src="img/arrow-btn.svg")
+
+              a.post-category(href="#")
+                .post-category__wrap(style="background-image: url(img/post-category2.png)")
+                  .post-category__up
+                    h4.post-category__caption Для работы
+                    span.post-category__text от 250 000 руб.
+                  .post-category__down
+                    .post-category__btn
+                      .post-category__btn-text 
+                        span Подробнее
+                      .post-category__wrap-arrow
+                        img.post-category__arrow(src="img/arrow-btn.svg")
+
+              
+            
+                  
+       
+          
+                    
+                  
+      
+      
+    footer.offset-bottom
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

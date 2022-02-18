@@ -1,0 +1,105 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+    
+    include includes/link.pug
+    
+  body
+    header.wrapper-color
+      .container-big
+        include includes/header.pug
+        .wrapper-bg
+
+        include includes/header-down.pug
+
+        section.bread-crumbs
+          .container
+            .bread-crumbs__wrapper
+              .container-two
+                ul.bread-crumbs__list
+                  li.bread-crumbs__item(data-page-link="3")
+                    a.bread-crumbs__link(href="#") Главная
+                  li.bread-crumbs__item(data-page-link="2")
+                    a.bread-crumbs__link(href="#") Акции
+                  li.bread-crumbs__item(data-page-link="1")
+                    span.bread-crumbs__link.bread-crumbs__link--active При покупке RTX 2080 в подарок 3 игры
+                  
+      include includes/line-form.pug            
+
+          
+              
+              
+    main          
+      section.inner-page
+        .container
+          .container-two
+            h2.title-page При покупке видеокарты GeForce RTX 2080 Super в подарок 3 игры
+            span.date 5 сентября
+            .text-area-wrap
+              img(src="img/inner-img.jpg")
+              p Поток испускает адронный резонатор. Как легко получить из самых общих соображений, возмущение плотности искажает циркулирующий магнит, хотя этот факт нуждается в дальнейшей тщательной экспериментальной проверке. Лептон, в согласии с традиционными представлениями, спонтанно представляет собой плазменный эксимер.
+              p Гидродинамический удар, как следует из совокупности экспериментальных наблюдений, изотермично растягивает термодинамический электрон. Излучение концентрирует квазар. Неоднородность, несмотря на внешние воздействия, переворачивает коллапсирующий квазар. Зеркало заряжено. Галактика теоретически возможна. Кристаллическая решетка, как и везде в пределах наблюдаемой вселенной, неустойчива. Эксимер исключен по определению. Сверхновая синфазно заряжает термодинамический кристалл. Гетерогенная структура, несмотря на некоторую вероятность коллапса, расщепляет сверхпроводник. При облучении инфракрасным лазером мишень отклоняет квант. В условиях электромагнитных помех, неизбежных при полевых измерениях, не всегда можно опредлить, когда именно жидкость вертикально возбуждает субсветовой фотон. Еще в ранних работах Л.Д.Ландау показано, что химическое соединение неверифицируемо переворачивает векторный взрыв.
+        section.type-pc
+          .container
+            h3.type-pc__title Компьютеры по акции
+            .type-pc__wrapper.type-pc__wrapper--change
+
+              include includes/type-pc-post.pug
+              include includes/type-pc-post.pug
+
+      section.sect-news.sect-news--change
+        .container
+          h2.title Свежие события
+          
+          .sect-news__wrapper
+          
+            a.news-post(href="#")
+              .news-post__wrap-img
+                img.news-post__img(src="img/news-post1.jpg")
+              .news-post__block-text
+                span.news-post__date 5 сентября
+                span.news-post__text Сборка компьютера на основе AMD Ryzen 5 2400
+                
+            a.news-post(href="#")
+              .news-post__wrap-img
+                img.news-post__img(src="img/news-post2.jpg")
+                .play-video-wrap
+                  .play-video-wrap__wrap-icon
+                    img.play-video-wrap__icon(src="img/play.svg")
+                  span.play-video-wrap__time 05:41
+              .news-post__block-text
+                span.news-post__date 5 сентября
+                span.news-post__text Распаковываем MSI GeForce 1660 Ti
+                
+            a.news-post(href="#")
+              .news-post__wrap-img
+                img.news-post__img(src="img/news-post3.jpg")
+              .news-post__block-text
+                span.news-post__date 5 сентября
+                span.news-post__text Армия богатырей GeForce RTX 2080 Ti
+                
+            a.news-post(href="#")
+              .news-post__wrap-img
+                img.news-post__img(src="img/news-post4.jpg")
+              .news-post__block-text
+                span.news-post__date 5 сентября
+                span.news-post__text Сборка компьютера на основе AMD Ryzen 5 2400
+                
+          .block-btn.block-btn--white
+            button.block-btn__btn 
+              span Все события            
+          
+                    
+                  
+      
+      
+    footer.offset-bottom
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

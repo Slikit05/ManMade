@@ -1,0 +1,108 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+    
+    include includes/link.pug
+    
+  body
+    header.wrapper-color
+      .container-big
+        include includes/header.pug
+        .wrapper-bg.wrapper-bg--change
+
+          include includes/header-down.pug
+
+          section.bread-crumbs
+            .container
+              .bread-crumbs__wrapper
+                .container-two
+                  ul.bread-crumbs__list
+                    li.bread-crumbs__item
+                      a.bread-crumbs__link(href="#") Главная
+                    li.bread-crumbs__item
+                      a.bread-crumbs__link(href="#") Акции
+                    li.bread-crumbs__item
+                      span.bread-crumbs__link.bread-crumbs__link--active При покупке RTX 2080 в подарок 3 игры
+                  
+      include includes/line-form.pug            
+
+          
+              
+              
+    main          
+      section.inner-page
+        .container
+          .container-two
+            h2.title-page Доставка
+            .content-wrapper
+              .text-area-wrap
+                blockquote При оформлении заказа в нашем интернет-магазине вы всегда можете заказать доставку товара на дом или в офис ежедневно в удобное для вас время
+              
+              .content-info-block
+                .content-info-block__wrapper
+                  .content-info-block__block-text
+                    h4 Москва и МО
+                    ul
+                      li Доставка до 10 км от МКАД – бесплатно, более 10 км от МКАД рассчитывается индивидуально.
+                      li При доставке вашего заказа, наши специалисты произведут установку и подключение оборудования, а так же, продемонстрируют работоспособность всей системы
+                      
+                  .content-info-block__wrap-img
+                    img.content-info-block__img(src="img/delivery1.jpg")
+                    
+              .content-info-block
+                .content-info-block__wrapper
+                  .content-info-block__wrap-img
+                    img.content-info-block__img(src="img/delivery2.jpg")
+                    
+                  .content-info-block__block-text.offset-left
+                    h4 Россия и ЕАЭС
+                    ul
+                      li Доставка по территории РФ осуществляется бесплатно, до ближайшего к вашему адресу терминала, транспортной компанией – партнером MAN-MADE.
+
+                      li Доставка до двери рассчитывается индивидуально
+                      
+              .content-info-block
+                .content-info-block__wrapper
+                  .content-info-block__block-text
+                    h4 Международная
+                    ul
+                      li Международная доставка осуществляется транснациональной транспортной компанией.
+                      li Стоимость доставки рассчитывается индивидуально.
+                      li Таможенные пошлины оплачиваются покупателем
+                      
+                  .content-info-block__wrap-img
+                    img.content-info-block__img(src="img/delivery3.jpg")        
+              
+              .content-blocks
+                .content-blocks__wrapper
+                  .content-blocks__block
+                    img.content-blocks__icon(src="img/shipped.svg")
+                    .content-blocks__wrap-text
+                      span.content-blocks__caption Перед отправкой в регионы и другие страны, компьютеры страхуются на полную стоимость заказа.
+                      p.content-blocks__text Все компьютеры надежно упакованы и защищены от суровых условий перевозки. Однако, во избежание проблем, связанных с неаккуратной работой транспортной компании, рекомендуется проверять целостность упаковки при получении заказа
+                  .content-blocks__block
+                    img.content-blocks__icon(src="img/gift.svg")
+                    .content-blocks__wrap-text
+                      span.content-blocks__caption Самовывоз
+                      p.content-blocks__text Мы уведомим Вас о готовности заказа к выдаче по телефону, либо в электронном письме. В нашем магазине вам продемонстрируют внешний вид и работоспособность компьютера. После того, как ваш заказ будет готов его можно будет забрать по адресу <b>ул. Нежинская 8к3, пом. 8. Магазин MAN-MADE.</b>
+                      a.content-blocks__link(href="#") Показать на карте
+
+              
+            
+                  
+       
+          
+                    
+                  
+      
+      
+    footer.offset-bottom
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug

@@ -1,0 +1,575 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+    
+    include includes/link.pug
+    
+  body
+    header.wrapper-red-color.wrapper-color
+      .container-big
+        include includes/header.pug
+        .wrapper-bg
+
+          include includes/header-down.pug
+
+          section.bread-crumbs
+            .container
+              .bread-crumbs__wrapper
+                ul.bread-crumbs__list
+                  li.bread-crumbs__item(data-page-link="2")
+                    a.bread-crumbs__link(href="#") Главная
+                  li.bread-crumbs__item(data-page-link="1")
+                    span.bread-crumbs__link.bread-crumbs__link--active BASE
+
+          
+                  
+      include includes/line-form.pug            
+              
+              
+    main.wrapper-red-color
+      section.two-column
+        .container
+          .two-column__wrapper
+            .content
+              .configurate
+                h2.configurate__title Собери свой компьютер
+                
+                .configurate-block.configurate-block--change
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/cpu.svg")
+                    h4.configurate-block__caption Процессор
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__grid.configurate-block__grid--change
+                    
+                      .configurate-item.configurate-item--active.configurate-tabs(rel="cpu1")
+                        span Intel Core i3
+                      .configurate-item.configurate-tabs(rel="cpu2")
+                        span Intel Core i5
+                        
+                    .configurate-tab-content.configurate-tab-content--open(id="cpu1")
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise1")
+                            .configurate-radio__circle
+                            span.configurate-radio__text i5-9400f
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise1")
+                            .configurate-radio__circle
+                            span.configurate-radio__text i5-9600
+                          span.configurate-radio__price + 3 500 руб.
+                          
+                    .configurate-tab-content(id="cpu2")
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise1")
+                            .configurate-radio__circle
+                            span.configurate-radio__text i5-9400f2
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise1")
+                            .configurate-radio__circle
+                            span.configurate-radio__text i5-960043
+                          span.configurate-radio__price + 3 500 руб.
+
+                .configurate-block.configurate-block--change
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/gpu.svg")
+                    h4.configurate-block__caption Видеокарта
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__grid.configurate-block__grid--change
+                    
+                      .configurate-item.configurate-item--active.configurate-tabs(rel="gpu1")
+                        span GTX 1650
+                      .configurate-item.configurate-tabs(rel="gpu2")
+                        span GTX 1660ti
+                      .configurate-item.configurate-tabs(rel="gpu3")
+                        span RTX 2060
+                        
+                    .configurate-tab-content.configurate-tab-content--open(id="gpu1")
+                      
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="gpu2")
+                            .configurate-radio__circle
+                            span.configurate-radio__text ASUS  GeForce GTX 1660 Ti DUAL
+                          span.configurate-radio__price - 15 480 руб.
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="gpu2")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI GeForce GTX1660 Ti VENTUS 6GB
+                          span.configurate-radio__price + 27 640 руб.
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="gpu2")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI GeForce GTX1660 Ti GAMING 6GB
+                          span.configurate-radio__price + 27 640 руб.
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="gpu2")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI GeForce GTX1660 Ti ARMOR 6GB    
+                          
+                    .configurate-tab-content(id="gpu2")      
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="gpu1")
+                            .configurate-radio__circle
+                            span.configurate-radio__text ASUS  GeForce GTX 1660 Ti DUAL
+                          span.configurate-radio__price - 15 480 руб.
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="gpu1")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI GeForce GTX1660 Ti VENTUS 6GB
+                          span.configurate-radio__price + 27 640 руб.
+                            
+                    .configurate-tab-content(id="gpu3")
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="gpu3")
+                            .configurate-radio__circle
+                            span.configurate-radio__text ASUS  GeForce GTX 1660 Ti DUAL
+                          span.configurate-radio__price - 15 480 руб.
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="gpu3")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI GeForce GTX1660 Ti VENTUS 6GB
+                          span.configurate-radio__price + 27 640 руб.
+
+                        
+                .configurate-block.configurate-block--change
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/motherboard.svg")
+                    h4.configurate-block__caption Материнские платы
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__grid.configurate-block__grid--change
+                    
+                      .configurate-item.configurate-item--active.configurate-tabs(rel="motherboard1")
+                        span H310M
+                      .configurate-item.configurate-tabs(rel="motherboard2")
+                        span B360M
+                        
+                    .configurate-tab-content.configurate-tab-content--open(id="motherboard1")
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise3")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI B360M GAMING PLUS
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise3")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI B360M PRO-VD
+                          span.configurate-radio__price + 3 500 руб.
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise3")
+                            .configurate-radio__circle
+                            span.configurate-radio__text ASUS PRIME B360M-A
+                          span.configurate-radio__price + 3 500 руб.
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise3")
+                            .configurate-radio__circle
+                            span.configurate-radio__text ASUS PRIME B360M-A
+                          span.configurate-radio__price + 3 500 руб.  
+                          
+                    .configurate-tab-content(id="motherboard2")
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise3")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI B360M GAMING PLUS
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise3")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI B360M PRO-VD
+                          span.configurate-radio__price + 3 500 руб.
+                          
+                .configurate-block.configurate-block--change
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/power.svg")
+                    h4.configurate-block__caption Блок питания
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    
+                    .configurate-tab-content.configurate-tab-content--open
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise4")
+                            .configurate-radio__circle
+                            span.configurate-radio__text Cooler Master MasterWatt Lite 500
+                          
+                          
+                .configurate-block.configurate-block--change
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/hdd.svg")
+                    h4.configurate-block__caption Жесткий диск
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__grid.configurate-block__grid--change
+                    
+                      .configurate-item.configurate-item--active.configurate-tabs(rel="hdd1")
+                        span Seagate
+                      .configurate-item.configurate-tabs(rel="hdd2")
+                        span Western Digital
+                        
+                    .configurate-tab-content.configurate-tab-content--open(id="hdd1")
+                      .configurate-radio
+                      
+                        label.configurate-radio__wrapper
+                          input.configurate-radio__input(type="radio" name="choise5")
+                          
+                          .configurate-radio__wrap                            
+                            .configurate-radio__circle
+                            span.configurate-radio__text 2Tb Western Digital Blue
+                            
+                          .configurate-radio__right-block
+                          
+                            .configurate-contre.configurate-contre--change
+                              .configurate-contre__block
+                                .configurate-contre__minus &mdash;
+
+                              .configurate-contre__value
+                                input.configurate-contre__number(type="text" value="0")
+                                span.configurate-contre__text шт.
+                              .configurate-contre__block  
+                                .configurate-contre__plus +
+                                
+                            span.configurate-radio__price + 27 640 руб.
+                            
+                          
+                        label.configurate-radio__wrapper
+                          input.configurate-radio__input(type="radio" name="choise5")
+                          
+                          .configurate-radio__wrap                            
+                            .configurate-radio__circle
+                            span.configurate-radio__text 2Tb Western Digital Blue
+                            
+                          .configurate-radio__right-block
+                          
+                            .configurate-contre.configurate-contre--change
+                              .configurate-contre__block
+                                .configurate-contre__minus &mdash;
+
+                              .configurate-contre__value
+                                input.configurate-contre__number(type="text" value="0")
+                                span.configurate-contre__text шт.
+                              .configurate-contre__block  
+                                .configurate-contre__plus +
+                                
+                            span.configurate-radio__price + 27 640 руб.
+                          
+                    .configurate-tab-content(id="hdd2")
+                      .configurate-radio
+                        label.configurate-radio__wrapper
+                          input.configurate-radio__input(type="radio" name="choise6")
+                          
+                          .configurate-radio__wrap                            
+                            .configurate-radio__circle
+                            span.configurate-radio__text 2Tb Western Digital Blue
+                            
+                          .configurate-radio__right-block
+                          
+                            .configurate-contre.configurate-contre--change
+                              .configurate-contre__block
+                                .configurate-contre__minus &mdash;
+
+                              .configurate-contre__value
+                                input.configurate-contre__number(type="text" value="0")
+                                span.configurate-contre__text шт.
+                              .configurate-contre__block  
+                                .configurate-contre__plus +
+                                
+                            span.configurate-radio__price + 27 640 руб.
+                            
+                          
+                        label.configurate-radio__wrapper
+                          input.configurate-radio__input(type="radio" name="choise6")
+                          
+                          .configurate-radio__wrap                            
+                            .configurate-radio__circle
+                            span.configurate-radio__text 2Tb Western Digital Blue
+                            
+                          .configurate-radio__right-block
+                          
+                            .configurate-contre.configurate-contre--change
+                              .configurate-contre__block
+                                .configurate-contre__minus &mdash;
+
+                              .configurate-contre__value
+                                input.configurate-contre__number(type="text" value="0")
+                                span.configurate-contre__text шт.
+                              .configurate-contre__block  
+                                .configurate-contre__plus +
+                                
+                            span.configurate-radio__price + 27 640 руб.
+                            
+                            
+                            
+                .configurate-block.configurate-block--change
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/ram.svg")
+                    h4.configurate-block__caption Оперативная память
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__grid.configurate-block__grid--change
+                    
+                      .configurate-item.configurate-item--active.configurate-tabs(rel="ram1")
+                        span 2400MHz
+                      .configurate-item.configurate-tabs(rel="ram2")
+                        span 2666MHz
+                        
+                    .configurate-tab-content.configurate-tab-content--open(id="ram1")
+                      .configurate-radio
+                      
+                        label.configurate-radio__wrapper
+                          input.configurate-radio__input(type="radio" name="choise7")
+                          
+                          .configurate-radio__wrap                            
+                            .configurate-radio__circle
+                            span.configurate-radio__text 8Gb DDR4 Kingston HyperX Fury
+                            
+                          .configurate-radio__right-block
+                          
+                            .configurate-contre.configurate-contre--change
+                              .configurate-contre__block
+                                .configurate-contre__minus &mdash;
+
+                              .configurate-contre__value
+                                input.configurate-contre__number(type="text" value="0")
+                                span.configurate-contre__text шт.
+                              .configurate-contre__block  
+                                .configurate-contre__plus +
+                                
+                            
+                          
+                        label.configurate-radio__wrapper
+                          input.configurate-radio__input(type="radio" name="choise7")
+                          
+                          .configurate-radio__wrap                            
+                            .configurate-radio__circle
+                            span.configurate-radio__text 16Gb DDR4 Kingston HyperX Fury
+                            
+                          .configurate-radio__right-block
+                          
+                            .configurate-contre.configurate-contre--change
+                              .configurate-contre__block
+                                .configurate-contre__minus &mdash;
+
+                              .configurate-contre__value
+                                input.configurate-contre__number(type="text" value="0")
+                                span.configurate-contre__text шт.
+                              .configurate-contre__block  
+                                .configurate-contre__plus +
+                                
+                            span.configurate-radio__price + 27 640 руб.
+                          
+                    .configurate-tab-content(id="ram2")
+                      .configurate-radio
+                        label.configurate-radio__wrapper
+                          input.configurate-radio__input(type="radio" name="choise8")
+                          
+                          .configurate-radio__wrap                            
+                            .configurate-radio__circle
+                            span.configurate-radio__text 2Tb Western Digital Blue
+                            
+                          .configurate-radio__right-block
+                          
+                            .configurate-contre.configurate-contre--change
+                              .configurate-contre__block
+                                .configurate-contre__minus &mdash;
+
+                              .configurate-contre__value
+                                input.configurate-contre__number(type="text" value="0")
+                                span.configurate-contre__text шт.
+                              .configurate-contre__block  
+                                .configurate-contre__plus +
+                                
+                            span.configurate-radio__price + 27 640 руб.
+                            
+                          
+                        label.configurate-radio__wrapper
+                          input.configurate-radio__input(type="radio" name="choise8")
+                          
+                          .configurate-radio__wrap                            
+                            .configurate-radio__circle
+                            span.configurate-radio__text 2Tb Western Digital Blue
+                            
+                          .configurate-radio__right-block
+                          
+                            .configurate-contre.configurate-contre--change
+                              .configurate-contre__block
+                                .configurate-contre__minus &mdash;
+
+                              .configurate-contre__value
+                                input.configurate-contre__number(type="text" value="0")
+                                span.configurate-contre__text шт.
+                              .configurate-contre__block  
+                                .configurate-contre__plus +
+                                
+                            span.configurate-radio__price + 27 640 руб.
+                            
+                          
+                .configurate-block.configurate-block--change
+                  .configurate-block__up
+                    img.configurate-block__icon(src="img/case.svg")
+                    h4.configurate-block__caption Корпус
+                    include includes/hint.pug
+                        
+                  .configurate-block__down
+                    .configurate-block__grid.configurate-block__grid--change
+                    
+                      .configurate-item.configurate-item--active.configurate-tabs(rel="case1")
+                        span Zalman
+                      .configurate-item.configurate-tabs(rel="case2")
+                        span Cooler Master
+                      .configurate-item.configurate-tabs(rel="case3")
+                        span AeroCool  
+                        
+                    .configurate-tab-content.configurate-tab-content--open(id="case1")
+                      img.case-img(src="img/coolermaster2.png")
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise9")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI B360M GAMING PLUS
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise9")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI B360M PRO-VD
+                          span.configurate-radio__price + 3 500 руб.
+                          
+                    .configurate-tab-content(id="case2")
+                      img.case-img(src="img/coolermaster2.png")
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise10")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI B360M GAMING PLUS
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise10")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI B360M PRO-VD
+                          span.configurate-radio__price + 3 500 руб.
+                          
+                    .configurate-tab-content(id="case3")
+                      img.case-img(src="img/coolermaster2.png")
+                      .configurate-radio
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise11")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI B360M GAMING PLUS
+                        .configurate-radio__wrapper
+                          label.configurate-radio__wrap
+                            input.configurate-radio__input(type="radio" name="choise11")
+                            .configurate-radio__circle
+                            span.configurate-radio__text MSI B360M PRO-VD
+                          span.configurate-radio__price + 3 500 руб.      
+                          
+                            
+            .right-column  
+              .sidebar
+                .stick-block
+                  .good-info-block
+
+                    .good-info-block__row
+                      span.good-info-block__caption Процессор:
+                      span.good-info-block__text Intel Core i5 9600K
+
+                    .good-info-block__row
+                      span.good-info-block__caption Охлаждение:
+                      span.good-info-block__text Thermaltake Pacific M360 Plus D5 Hard Tube Water Cooling Kit
+
+                    .good-info-block__row
+                      span.good-info-block__caption Видеокарта:
+                      span.good-info-block__text MSI GeForce 2070  8 Gb
+
+                    .good-info-block__row
+                      span.good-info-block__caption Память RAM:
+                      span.good-info-block__text 2 x 16 Gb DDR4 3600 Corsair
+
+                    .good-info-block__row
+                      span.good-info-block__caption Накопители:
+                      span.good-info-block__text 250 Gb SSD Samsung EVO 950,2 Tb Seagate Barracuda
+
+                    .good-info-block__row
+                      span.good-info-block__caption Мат. плата:
+                      span.good-info-block__text MSI B360M PRO-Vh
+
+                    .good-info-block__row
+                      span.good-info-block__caption Корпус:
+                      span.good-info-block__text Cougar MX330-F черный
+
+                    span.good-info-block__link(href="#") Сбросить
+
+                  .good-price-block
+                    .good-price-block__left
+                      span.good-price-block__old-price 150 990 руб.
+                      span.good-price-block__price 120 990 руб.
+                    .good-price-block__right
+                      span.good-price-block__caption Выгода
+                      span.good-price-block__sm-price 30 000 рублей
+
+                  .garantie
+                    .garantie__icon
+                      span.garantie__number 2
+                    .garantie__wrap
+                      span.garantie__caption Гарантия
+                      span.garantie__text 2 года
+
+                  .row-btn
+                    .block-btn
+                      button.block-btn__btn 
+                        span Купить
+                    .block-btn.block-btn--white-two
+                      button.block-btn__btn
+                        span Нужна помощь?
+      
+            
+            
+      
+                    
+                  
+      
+      
+    footer.wrapper-red-color.offset-bottom
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug
+    
+    script(src="js/function.price.block.js")
+    

@@ -1,0 +1,296 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title ManMade
+    
+    include includes/link.pug
+    
+  body
+    header.wrapper-color
+      .container-big
+        include includes/header.pug
+        //.wrapper-bg(style="background-image: url(img/first-screen1.jpg)")
+        .wrapper-bg
+
+          include includes/header-down.pug
+
+          section.bread-crumbs
+            .container
+              .bread-crumbs__wrapper
+                ul.bread-crumbs__list
+                  li.bread-crumbs__item(data-page-link="2")
+                    a.bread-crumbs__link(href="#") Главная
+                  li.bread-crumbs__item(data-page-link="1")
+                    span.bread-crumbs__link.bread-crumbs__link--active Игровые ПК
+                    
+          section.first-screen
+            .container
+              .first-screen__wrapper.first-screen__wrapper--grid
+                .first-screen__block-title
+                  .first-screen__up
+                    h2.first-screen__title Легко в учении — легко в игре
+                    p.first-screen__text Побеждай на Ultra-настройках в самых современных играх в 4к разрешении без тормозов и лагов. Строй любые математические модели и компилируй любой программный код
+                
+                          
+                .first-screen__bg-wrap.test-class.test2-class
+                  img.first-screen__bg-img(src="img/first-screen1.jpg")
+                  
+                .first-screen__down  
+                  span.first-screen__price от 221 990 руб.
+                  .first-screen__flex
+                    .block-btn
+                      button.block-btn__btn 
+                        span Узнать больше  
+                  
+
+          //section.first-screen
+            .container
+              .first-screen__wrapper
+                .first-screen__left-block
+                  .first-screen__up
+                    h2.first-screen__title Легко в учении — легко в игре
+                    p.first-screen__text Побеждай на Ultra-настройках в самых современных играх в 4к разрешении без тормозов и лагов. Строй любые математические модели и компилируй любой программный код
+                  .first-screen__down  
+                    span.first-screen__price от 221 990 руб.
+                    .first-screen__flex
+                      .block-btn
+                        button.block-btn__btn 
+                          span Узнать больше
+              
+              
+    main          
+      section.category
+        .container
+          .category__wrapper
+          
+            a.post-complectation(href="#")
+              .post-complectation__up
+                h3.post-complectation__title BASE
+                p.post-complectation__text Недорогие компьютеры обеспечивают необходимую производительность для большинства современных игр, работы и учебы
+                .post-complectation__link Подробнее
+              .post-complectation__wrap
+                img.post-complectation__img(src="img/complecting1.png")
+                
+            a.post-complectation(href="#")
+              .post-complectation__up
+                h3.post-complectation__title Rare
+                p.post-complectation__text Недорогие компьютеры обеспечивают необходимую производительность для большинства современных игр, работы и учебы
+                .post-complectation__link Подробнее
+              .post-complectation__wrap
+                img.post-complectation__img(src="img/complecting2.png")
+                
+            a.post-complectation(href="#")
+              .post-complectation__up
+                h3.post-complectation__title Epic
+                p.post-complectation__text Недорогие компьютеры обеспечивают необходимую производительность для большинства современных игр, работы и учебы
+                .post-complectation__link Подробнее
+              .post-complectation__wrap
+                img.post-complectation__img(src="img/complecting3.png")
+                
+            a.post-complectation(href="#")
+              .post-complectation__up
+                h3.post-complectation__title Legendary
+                p.post-complectation__text Недорогие компьютеры обеспечивают необходимую производительность для большинства современных игр, работы и учебы
+                .post-complectation__link Подробнее
+              .post-complectation__wrap
+                img.post-complectation__img(src="img/complecting4.png")
+                
+      section.type-pc
+        .container
+          h3.type-pc__title Популярные компьютеры для игр
+          .type-pc__wrapper
+            
+            include includes/type-pc-post.pug
+            .type-pc-post
+              .type-pc-post__up
+                img.type-pc-post__img(src="img/type-pc-post.png")
+              .type-pc-post__down
+                .type-pc-post__flex
+                  .type-pc-post__wrap
+                    h4.type-pc-post__caption Epic H7-E1
+                    span.type-pc-post__price 153 000 руб.
+                  a.type-pc-post__cart(href="#")
+                    img.type-pc-post__cart-icon(src="img/cart.svg")
+                p.type-pc-post__text-gray Отличные игровые компьютеры: высокая производительность и оптимальная стоимость
+
+                .type-pc-post__row
+                  a.type-pc-post__link(href="#") Узнать больше
+                  a.type-pc-post__link(href="#") Конфигуратор
+
+                .type-pc-post__block-text
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/testing.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Процессор
+                        span.type-pc-har__text Intel Core i5 9600K
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/keyboard.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Видеокарта
+                        span.type-pc-har__text 8 Gb MSI GeForce 2070 Super 
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/mouse.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Материнская плата
+                        span.type-pc-har__text MSI B360 GAMING PLUS 
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/headphones.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Оперативная память RAM
+                        span.type-pc-har__text 2 x 16 Gb DDR4 Korsair
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/rag.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Видеокарта
+                        span.type-pc-har__text 8 Gb MSI GeForce 2070 Super 
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/motherboard.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Материнская плата
+                        span.type-pc-har__text MSI B360 GAMING PLUS 
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/ram.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Оперативная память RAM
+                        span.type-pc-har__text 2 x 16 Gb DDR4 Korsair
+
+                    include includes/hint.pug
+            
+            .type-pc-post
+              .type-pc-post__up
+                img.type-pc-post__img(src="img/type-pc-post.png")
+              .type-pc-post__down
+                .type-pc-post__flex
+                  .type-pc-post__wrap
+                    h4.type-pc-post__caption Epic H7-E1
+                    span.type-pc-post__price 153 000 руб.
+                  a.type-pc-post__cart(href="#")
+                    img.type-pc-post__cart-icon(src="img/cart.svg")
+                p.type-pc-post__text-gray Отличные игровые компьютеры: высокая производительность и оптимальная стоимость
+
+                .type-pc-post__row
+                  a.type-pc-post__link(href="#") Узнать больше
+                  a.type-pc-post__link(href="#") Конфигуратор
+
+                .type-pc-post__block-text
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/power.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Процессор
+                        span.type-pc-har__text Intel Core i5 9600K
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/ssd.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Видеокарта
+                        span.type-pc-har__text 8 Gb MSI GeForce 2070 Super 
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/modding.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Материнская плата
+                        span.type-pc-har__text MSI B360 GAMING PLUS 
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/monitor.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Оперативная память RAM
+                        span.type-pc-har__text 2 x 16 Gb DDR4 Korsair
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/os.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Видеокарта
+                        span.type-pc-har__text 8 Gb MSI GeForce 2070 Super 
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/antivirus.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Материнская плата
+                        span.type-pc-har__text MSI B360 GAMING PLUS 
+
+                    include includes/hint.pug
+
+                  .type-pc-har
+                    .type-pc-har__wrap
+                      img.type-pc-har__icon(src="img/office.svg")
+                      .type-pc-har__block-text
+                        span.type-pc-har__caption Оперативная память RAM
+                        span.type-pc-har__text 2 x 16 Gb DDR4 Korsair
+
+                    include includes/hint.pug
+            
+            include includes/type-pc-post.pug
+            
+            include includes/type-pc-post.pug
+            include includes/type-pc-post.pug
+            include includes/type-pc-post.pug
+            
+                        
+                        
+                        
+                        
+      section.sect-text
+        .container
+          .sect-text__wrapper
+            h3 Заголовок SEO-текста для поисковых роботов и продвижения
+            p Очевидно, что экситон теоретически возможен. Плазменное образование, если рассматривать процессы в рамках специальной теории относительности, последовательно расщепляет межядерный взрыв. Тело, в первом приближении, однородно ускоряет торсионный атом. Экситон выталкивает сверхпроводник.
+            p В самом общем случае кристаллическая решетка концентрирует магнит. Жидкость искажает электрон, генерируя периодические импульсы синхротронного излучения. Очевидно, что ударная волна однородно восстанавливает субсветовой фонон в полном соответствии с законом сохранения энергии. Кристаллическая решетка когерентна. Химическое соединение трансформирует барионный пульсар.
+            p Лазер излучает гамма-квант. Расслоение индуцирует расширяющийся поток, тем самым открывая возможность цепочки квантовых превращений. Сверхпроводник стохастично расщепляет экситон. Идеальная тепловая машина, как следует из совокупности экспериментальных наблюдений, одномерно возбуждает пульсар. Поверхность поглощает гравитационный экситон. Гравитирующая сфера, даже при наличии сильных аттракторов, волнообразна.
+      
+                    
+                  
+      
+      
+    footer
+      include includes/footer.pug
+
+      
+                     
+                   
+    include includes/script.pug
